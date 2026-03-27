@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenAI Creative Lab Render</title>
+    <meta
+      name="description"
+      content="OpenAI Creative Lab render page for Soulborn and Tarot, with bilingual narrative, local videos, process placeholders, and toolchain notes."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top">
+        <span class="brand-mark">OCL</span>
+        <span class="brand-copy">OpenAI Creative Lab Render</span>
+      </a>
+
+      <nav class="topnav" aria-label="Primary">
+        <a href="#soulborn" data-i18n="navSoulborn">Soulborn</a>
+        <a href="#tarot" data-i18n="navTarot">Tarot</a>
+        <a href="#toolchain" data-i18n="navToolchain">Toolchain</a>
+        <a href="#archive" data-i18n="navArchive">Archive</a>
+      </nav>
+
+      <div class="lang-switch" aria-label="Language selector">
+        <button type="button" class="lang-pill is-active" data-lang="fr">FR</button>
+        <button type="button" class="lang-pill" data-lang="en">EN</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <video
+          class="hero-video"
+          src="V1 trailer solborne.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+        ></video>
+        <div class="hero-scrim"></div>
+
+        <div class="hero-inner reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">OpenAI Creative Lab · Final Render</p>
+          <h1 data-i18n="heroTitle">
+            Une page bilingue qui ouvre sur le résultat, puis remonte vers le processus.
+          </h1>
+          <p class="hero-copy" data-i18n="heroCopy">
+            Soulborn et Tarot sont présentés comme un journal de recherche honnête : inspirations, panne
+            créative, itérations retenues, outils utilisés, et emplacements déjà posés pour les captures
+            manquantes.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#soulborn" data-i18n="heroPrimaryCta">Entrer dans Soulborn</a>
+            <a class="button button-secondary" href="#tarot" data-i18n="heroSecondaryCta">Entrer dans Tarot</a>
+            <a
+              class="button button-ghost"
+              href="https://drive.google.com/drive/folders/1yjO7AlCOGarD3IdYty0DhSxgMllCjm78?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="heroDriveCta"
+            >
+              Ouvrir l'archive Drive
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span class="meta-chip" data-i18n="heroMetaJournal">Journal honnête</span>
+            <span class="meta-chip" data-i18n="heroMetaBilingual">FR / EN intégral</span>
+            <span class="meta-chip" data-i18n="heroMetaResultFirst">Résultat d'abord</span>
+            <span class="meta-chip" data-i18n="heroMetaLocalMedia">Médias locaux branchés</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="portal-strip reveal">
+        <a class="portal-card soulborn" href="#soulborn">
+          <span class="portal-label" data-i18n="portalSoulbornLabel">Chapitre 01</span>
+          <h2 data-i18n="portalSoulbornTitle">Soulborn</h2>
+          <p data-i18n="portalSoulbornCopy">
+            Voyageur, monolithe, mondes successifs, sept soleils, puis soleil unique. Le trailer reste le
+            cœur du rendu.
+          </p>
+        </a>
+
+        <a class="portal-card tarot" href="#tarot">
+          <span class="portal-label" data-i18n="portalTarotLabel">Chapitre 02</span>
+          <h2 data-i18n="portalTarotTitle">Tarot</h2>
+          <p data-i18n="portalTarotCopy">
+            Évolution de Lapin Interactive, expérimentations vitrail puis pivot vers un deck vidéo
+            minimaliste et une expérience plus lisible.
+          </p>
+        </a>
+      </section>
+
+      <section class="overview reveal">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="overviewEyebrow">Editorial Frame</p>
+          <h2 data-i18n="overviewTitle">Ce que cette page doit montrer</h2>
+        </div>
+        <div class="overview-grid" id="overview-grid"></div>
+      </section>
+
+      <section class="chapter" id="soulborn">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="soulbornEyebrow">Soulborn</p>
+          <h2 data-i18n="soulbornTitle">Le trailer officiel : voyageur, monolithe, mondes successifs</h2>
+          <p class="section-copy" data-i18n="soulbornLead">
+            La narration reste honnête : inspiration littéraire, panne de créativité, tests de natures
+            mortes et d'autres capacités de Sora, puis retour vers une scène qui venait directement de la
+            lecture en cours.
+          </p>
+        </div>
+
+        <div class="chapter-grid chapter-grid-feature">
+          <article class="panel feature-panel reveal">
+            <div class="panel-head">
+              <span class="status status-live" data-i18n="statusAvailable">Disponible localement</span>
+              <span class="panel-tag" data-i18n="soulbornFeatureTag">Final trailer</span>
+            </div>
+            <h3 data-i18n="soulbornFeatureTitle">V1 trailer Soulborn</h3>
+            <p data-i18n="soulbornFeatureCopy">
+              Ouverture sur le résultat final actuel avant de revenir au making-of, aux itérations
+              d'images et au montage.
+            </p>
+            <video controls preload="metadata" playsinline class="media-frame" src="V1 trailer solborne.mp4"></video>
+            <p class="asset-note">V1 trailer solborne.mp4</p>
+          </article>
+
+          <article class="panel narrative-panel reveal">
+            <div class="panel-head">
+              <span class="status status-note" data-i18n="statusCurated">Curated narrative</span>
+              <span class="panel-tag" data-i18n="soulbornNarrativeTag">Story frame</span>
+            </div>
+            <h3 data-i18n="soulbornNarrativeTitle">Angle éditorial retenu</h3>
+            <div class="stacked-copy">
+              <p data-i18n="soulbornNarrativePoint1">
+                Partir de l'inspiration littéraire, puis expliquer la panne de créativité et le besoin de
+                tester Sora sur plusieurs terrains avant de trouver la bonne forme.
+              </p>
+              <p data-i18n="soulbornNarrativePoint2">
+                Dire clairement que le monde couvert d'eau et les sept soleils posaient un problème visuel
+                difficile parce que ces combinaisons existent peu dans les références vues par les modèles.
+              </p>
+              <p data-i18n="soulbornNarrativePoint3">
+                Montrer le pivot comme une décision productive : ajouter un objet ou une présence animée
+                rend la scène plus lisible et plus vivante.
+              </p>
+            </div>
+          </article>
+
+          <article class="panel music-panel reveal">
+            <div class="panel-head">
+              <span class="status status-note" data-i18n="statusPrompt">Prompt documenté</span>
+              <span class="panel-tag">Suno</span>
+            </div>
+            <h3 data-i18n="sunoTitle">Direction musicale retenue</h3>
+            <p data-i18n="sunoCopy">
+              Le trailer s'appuie sur la piste choisie dans le document de travail Suno, avec un rythme
+              pensé pour les transitions rapides entre mondes.
+            </p>
+            <blockquote class="prompt-quote">
+              <p class="prompt-title">4 — Traversée des mondes (transitions rapides)</p>
+              <p id="suno-prompt"></p>
+            </blockquote>
+            <p class="asset-note">prompt-suno.md</p>
+          </article>
+        </div>
+
+        <div class="tag-ribbon reveal" id="soulborn-worlds"></div>
+
+        <div class="media-grid" id="soulborn-media"></div>
+        <div class="placeholder-grid" id="soulborn-placeholders"></div>
+      </section>
+
+      <section class="chapter chapter-alt" id="tarot">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="tarotEyebrow">Tarot</p>
+          <h2 data-i18n="tarotTitle">Lapin Interactive : de l'expérimentation vitrail au deck minimaliste</h2>
+          <p class="section-copy" data-i18n="tarotLead">
+            Le chapitre Tarot montre moins un seul climax final qu'une évolution de direction : une série
+            d'essais visuels, un recul sur ce qui marchait vraiment, puis un deck vidéo plus cohérent pour
+            l'expérience interactive.
+          </p>
+        </div>
+
+        <div class="chapter-grid">
+          <article class="panel feature-panel reveal">
+            <div class="panel-head">
+              <span class="status status-placeholder" data-i18n="statusPlaceholder">Placeholder prêt</span>
+              <span class="panel-tag" data-i18n="tarotFeatureTag">Final experience</span>
+            </div>
+            <h3 data-i18n="tarotFeatureTitle">Vidéo ou capture finale du tarot à ajouter</h3>
+            <p data-i18n="tarotFeatureCopy">
+              Emplacement dédié pour la vidéo finale de l'expérience de tirage, ou pour une capture
+              d'écran naviguée de la version retenue.
+            </p>
+            <div class="placeholder-art placeholder-art-video">
+              <span data-i18n="placeholderVideoFinal">Placeholder · final tarot video / experience</span>
+            </div>
+          </article>
+
+          <article class="panel narrative-panel reveal">
+            <div class="panel-head">
+              <span class="status status-note" data-i18n="statusCurated">Curated narrative</span>
+              <span class="panel-tag" data-i18n="tarotNarrativeTag">Process frame</span>
+            </div>
+            <h3 data-i18n="tarotNarrativeTitle">Arc narratif retenu</h3>
+            <div class="stacked-copy">
+              <p data-i18n="tarotNarrativePoint1">
+                Montrer l'évolution de Lapin Interactive plutôt qu'un simple catalogue de cartes.
+              </p>
+              <p data-i18n="tarotNarrativePoint2">
+                Expliquer que les premières tentatives vidéo en vitrail ont été conservées comme images dans
+                le projet, mais pas comme direction finale pour les clips.
+              </p>
+              <p data-i18n="tarotNarrativePoint3">
+                Mettre en avant le deck minimaliste comme décision de lisibilité, de cohérence et
+                d'efficacité pour l'expérience finale.
+              </p>
+            </div>
+          </article>
+
+          <article class="panel narrative-panel reveal">
+            <div class="panel-head">
+              <span class="status status-live" data-i18n="statusAvailable">Disponible localement</span>
+              <span class="panel-tag" data-i18n="tarotSamplesTag">Mini examples</span>
+            </div>
+            <h3 data-i18n="tarotSamplesTitle">Mini-exemples répartis sur plusieurs cartes</h3>
+            <p data-i18n="tarotSamplesCopy">
+              La page est pensée pour montrer plusieurs points du projet plutôt qu'un seul bloc massif :
+              cartes, prompts, évolution de l'interface, bulk iterations et captures d'outils.
+            </p>
+            <div class="tag-cloud" id="tarot-cards"></div>
+          </article>
+        </div>
+
+        <div class="media-grid" id="tarot-media"></div>
+        <div class="placeholder-grid" id="tarot-placeholders"></div>
+      </section>
+
+      <section class="chapter" id="toolchain">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="toolchainEyebrow">Toolchain</p>
+          <h2 data-i18n="toolchainTitle">Fiche technique des applications mentionnées</h2>
+          <p class="section-copy" data-i18n="toolchainLead">
+            Chaque outil est présenté selon le même angle : rôle, input, output, raison du choix, limites
+            et résultat concret dans le rendu.
+          </p>
+        </div>
+
+        <div class="tool-grid" id="tool-grid"></div>
+      </section>
+
+      <section class="chapter chapter-alt" id="archive">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="archiveEyebrow">Archive & Research</p>
+          <h2 data-i18n="archiveTitle">Preuves de recherche, dossiers et emplacements encore à compléter</h2>
+          <p class="section-copy" data-i18n="archiveLead">
+            Cette dernière partie regroupe le graphe Obsidian, l'archive Drive, le pipeline NanoBanana, et
+            les placeholders déjà posés pour les captures pas encore rangées.
+          </p>
+        </div>
+
+        <div class="archive-grid" id="archive-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p data-i18n="footerCredit">Autorisation de partage de mon travail avec crédits @ex0niq</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
