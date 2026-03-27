@@ -57,6 +57,8 @@ const ui = {
     tarotFeatureCopy:
       "Emplacement dédié pour la vidéo finale de l'expérience de tirage, ou pour une capture d'écran naviguée de la version retenue.",
     placeholderVideoFinal: "Placeholder · final tarot video / experience",
+    tarotLiveCta: "Ouvrir l'expérience tarot",
+    tarotLiveNote: "Lien live : tarot.exoniq.io",
     tarotNarrativeTag: "Cadre du process",
     tarotNarrativeTitle: "Arc narratif retenu",
     tarotNarrativePoint1:
@@ -139,6 +141,8 @@ const ui = {
     tarotFeatureCopy:
       "Dedicated slot for the final draw experience video, or for a navigated screen capture of the selected version.",
     placeholderVideoFinal: "Placeholder · final tarot video / experience",
+    tarotLiveCta: "Open the tarot experience",
+    tarotLiveNote: "Live link: tarot.exoniq.io",
     tarotNarrativeTag: "Process frame",
     tarotNarrativeTitle: "Chosen narrative arc",
     tarotNarrativePoint1:
@@ -253,8 +257,9 @@ const dataset = {
         fr: "À montrer comme preuve de recherche visuelle : exploration des possibilités, tests d'ambiances, puis recentrage sur le voyageur et le monolithe.",
         en: "To show as visual research evidence: exploration of possibilities, atmosphere tests, then a refocus on the traveler and the monolith.",
       },
-      src: "sora app.mp4",
-      note: "sora app.mp4",
+      embed: "https://www.youtube.com/embed/mSoq4g7SNvQ",
+      href: "https://youtu.be/mSoq4g7SNvQ",
+      note: "YouTube · mSoq4g7SNvQ",
     },
     {
       status: "available",
@@ -959,17 +964,45 @@ function renderMediaGrid(containerSelector, items, lang) {
   }
 
   container.innerHTML = items
-    .map(
-      (item) => `
+    .map((item) => {
+      const media = item.embed
+        ? `
+          <iframe
+            src="${escapeHtml(item.embed)}"
+            title="${escapeHtml(textFor(item.title, lang))}"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        `
+        : `<video controls preload="metadata" playsinline src="${escapeHtml(item.src)}"></video>`;
+
+      const button = item.href
+        ? `
+          <div class="panel-actions">
+            <a
+              class="button button-secondary"
+              href="${escapeHtml(item.href)}"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ${escapeHtml(ui[lang].openLink)}
+            </a>
+          </div>
+        `
+        : "";
+
+      return `
         <article class="media-card reveal">
           ${statusMarkup(item.status, item.tag, lang)}
           <h3>${escapeHtml(textFor(item.title, lang))}</h3>
           <p>${escapeHtml(textFor(item.copy, lang))}</p>
-          <video controls preload="metadata" playsinline src="${escapeHtml(item.src)}"></video>
+          ${media}
+          ${button}
           <p class="asset-note">${escapeHtml(item.note)}</p>
         </article>
-      `,
-    )
+      `;
+    })
     .join("");
 }
 

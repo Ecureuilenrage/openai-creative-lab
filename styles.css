@@ -599,6 +599,15 @@ main {
   aspect-ratio: 16 / 9;
 }
 
+.media-card iframe {
+  width: 100%;
+  margin-top: 0.95rem;
+  border: 0;
+  border-radius: 1.35rem;
+  background: #0c0c0c;
+  aspect-ratio: 16 / 9;
+}
+
 .placeholder-art {
   display: grid;
   place-items: center;
@@ -623,6 +632,10 @@ main {
 
 .placeholder-art-video {
   min-height: 17rem;
+}
+
+.panel-actions {
+  margin-top: 1rem;
 }
 
 .tool-meta {
