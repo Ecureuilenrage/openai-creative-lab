@@ -293,6 +293,7 @@ const dataset = {
       },
     },
     {
+      status: "available",
       tag: { fr: "Obsidian", en: "Obsidian" },
       title: {
         fr: "Graphe de recherche et profondeur de préparation",
@@ -306,6 +307,7 @@ const dataset = {
         fr: "Placeholder · Obsidian graph screenshot",
         en: "Placeholder · Obsidian graph screenshot",
       },
+      image: "obsidian.png",
     },
   ],
   tarotCards: [
@@ -825,7 +827,7 @@ const dataset = {
       },
     },
     {
-      status: "placeholder",
+      status: "available",
       tag: { fr: "Obsidian", en: "Obsidian" },
       title: { fr: "Capture du graphe Obsidian", en: "Obsidian graph capture" },
       copy: {
@@ -836,6 +838,7 @@ const dataset = {
         fr: "Source note clé : C:\\Users\\darkl\\Documents\\important\\obsidian\\Brain\\brain\\2026-03-19.md",
         en: "Key source note: C:\\Users\\darkl\\Documents\\important\\obsidian\\Brain\\brain\\2026-03-19.md",
       },
+      image: "obsidian.png",
     },
     {
       status: "available",
@@ -983,18 +986,32 @@ function renderPlaceholderGrid(containerSelector, items, lang) {
   }
 
   container.innerHTML = items
-    .map(
-      (item) => `
-        <article class="placeholder-card reveal">
-          ${statusMarkup("placeholder", item.tag, lang)}
-          <h3>${escapeHtml(textFor(item.title, lang))}</h3>
-          <p>${escapeHtml(textFor(item.copy, lang))}</p>
+    .map((item) => {
+      const visual = item.image
+        ? `
+          <div class="placeholder-art placeholder-art-image">
+            <img
+              src="${escapeHtml(item.image)}"
+              alt="${escapeHtml(textFor(item.title, lang))}"
+              loading="lazy"
+            />
+          </div>
+        `
+        : `
           <div class="placeholder-art">
             <span>${escapeHtml(textFor(item.art, lang))}</span>
           </div>
+        `;
+
+      return `
+        <article class="placeholder-card reveal">
+          ${statusMarkup(item.status || "placeholder", item.tag, lang)}
+          <h3>${escapeHtml(textFor(item.title, lang))}</h3>
+          <p>${escapeHtml(textFor(item.copy, lang))}</p>
+          ${visual}
         </article>
-      `,
-    )
+      `;
+    })
     .join("");
 }
 
@@ -1039,6 +1056,18 @@ function renderArchiveGrid(lang) {
 
   container.innerHTML = dataset.archive
     .map((item) => {
+      const media = item.image
+        ? `
+          <div class="archive-media">
+            <img
+              src="${escapeHtml(item.image)}"
+              alt="${escapeHtml(textFor(item.title, lang))}"
+              loading="lazy"
+            />
+          </div>
+        `
+        : "";
+
       const button = item.href
         ? `
           <a
@@ -1061,6 +1090,7 @@ function renderArchiveGrid(lang) {
           ${statusMarkup(item.status, item.tag, lang)}
           <h3>${escapeHtml(textFor(item.title, lang))}</h3>
           <p>${escapeHtml(textFor(item.copy, lang))}</p>
+          ${media}
           ${note}
           ${button}
         </article>

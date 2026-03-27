@@ -634,8 +634,31 @@ main {
   min-height: 17rem;
 }
 
+.placeholder-art-image {
+  padding: 0.65rem;
+  min-height: auto;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.54), rgba(249, 240, 224, 0.82));
+}
+
+.placeholder-art img,
+.archive-media img {
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
 .panel-actions {
   margin-top: 1rem;
+}
+
+.archive-media {
+  margin-top: 1rem;
+  padding: 0.65rem;
+  border-radius: 1.35rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.44);
 }
 
 .tool-meta {
