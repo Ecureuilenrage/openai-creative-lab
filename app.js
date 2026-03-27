@@ -293,36 +293,6 @@ const dataset = {
       },
     },
     {
-      tag: { fr: "Recherche Sora", en: "Sora research" },
-      title: {
-        fr: "Tests de natures mortes et détours visuels",
-        en: "Still-life tests and visual detours",
-      },
-      copy: {
-        fr: "Bloc prévu pour montrer les essais qui ne sont pas devenus le trailer, mais qui expliquent la panne créative et la recherche de forme.",
-        en: "Planned block for tests that did not become the trailer, but explain the creative block and the search for form.",
-      },
-      art: {
-        fr: "Placeholder · still life tests / alternative atmospheres",
-        en: "Placeholder · still life tests / alternative atmospheres",
-      },
-    },
-    {
-      tag: { fr: "Pivot productif", en: "Productive pivot" },
-      title: {
-        fr: "Présence animée ajoutée à la scène",
-        en: "Animated presence added to the scene",
-      },
-      copy: {
-        fr: "Espace pour montrer le basculement vers une scène plus vivante, avec un objet ou un être animé qui rend le plan plus convaincant.",
-        en: "Space to show the shift toward a livelier scene, where an animated object or being makes the shot more convincing.",
-      },
-      art: {
-        fr: "Placeholder · shark pivot / moving element references",
-        en: "Placeholder · shark pivot / moving element references",
-      },
-    },
-    {
       tag: { fr: "Obsidian", en: "Obsidian" },
       title: {
         fr: "Graphe de recherche et profondeur de préparation",
