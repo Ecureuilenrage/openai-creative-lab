@@ -36,7 +36,7 @@
         }
       }
     }
-  }, { threshold: 0.8 });
+  }, { threshold: 0.15 });
 
   var elements = document.querySelectorAll('.reveal');
   for (var i = 0; i < elements.length; i++) {
