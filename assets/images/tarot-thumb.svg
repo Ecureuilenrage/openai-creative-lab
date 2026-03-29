@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 338">
+  <rect width="600" height="338" fill="#f7f1e8"/>
+  <rect x="24" y="24" width="552" height="290" rx="20" fill="#1c1917"/>
+  <rect x="70" y="72" width="102" height="164" rx="14" fill="#f7f1e8"/>
+  <rect x="188" y="96" width="102" height="164" rx="14" fill="#d9cab6"/>
+  <rect x="306" y="72" width="102" height="164" rx="14" fill="#f7f1e8"/>
+  <rect x="424" y="96" width="102" height="164" rx="14" fill="#d9cab6"/>
+  <circle cx="121" cy="126" r="20" fill="#bf5a30"/>
+  <circle cx="357" cy="126" r="20" fill="#bf5a30"/>
+  <text x="56" y="286" fill="#f7f1e8" font-family="JetBrains Mono, monospace" font-size="34" font-weight="700">TAROT</text>
+  <text x="56" y="312" fill="#d6c7b3" font-family="JetBrains Mono, monospace" font-size="14">INTERACTIVE AI APPLICATION</text>
+</svg>

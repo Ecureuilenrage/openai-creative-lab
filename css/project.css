@@ -1,0 +1,227 @@
+/* ══════════════════════════════════════════════
+   project.css — Project Page Styles
+   Shared by Soulborn & Tarot project pages
+   Creative Lab · Paris 8
+   ══════════════════════════════════════════════ */
+
+/* ── Smooth Scroll ── */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Project Header ── */
+
+.project-header {
+  padding: var(--space-lg) 0 var(--space-md);
+}
+
+.project-header h1 {
+  font-size: var(--text-3xl);
+  letter-spacing: var(--letter-tight);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.project-subtitle {
+  font-size: var(--text-lg);
+  color: var(--text-muted);
+  margin-top: var(--space-xs);
+}
+
+/* ── Dashboard Hero (video + nav side by side) ── */
+
+.dashboard-hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-md);
+  align-items: start;
+}
+
+/* ── Video Embed ── */
+
+.video-embed {
+  border: var(--border-width) solid var(--shadow-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  overflow: hidden;
+  width: 100%;
+}
+
+.video-embed iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: none;
+}
+
+/* ── Dashboard Tags ── */
+
+.dashboard-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin: var(--space-md) 0;
+}
+
+/* ── Dashboard Nav ── */
+
+.dashboard-nav .card {
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.dashboard-nav .card h3,
+.dashboard-nav__label {
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin: 0;
+}
+
+.dashboard-nav--col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+/* ── Project Eyebrow ── */
+
+.project-eyebrow {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-wide);
+  color: var(--text-muted);
+  margin: 0 0 var(--space-xs);
+}
+
+/* ── Project Lead ── */
+
+.project-lead {
+  color: var(--text-muted);
+  line-height: 2;
+  max-width: 720px;
+  margin-top: var(--space-sm);
+}
+
+/* ── Tool Cards ── */
+
+.tool-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-card .tag:first-child {
+  margin-bottom: var(--space-sm);
+  align-self: flex-start;
+}
+
+.tool-card h3 {
+  font-size: var(--text-lg);
+  margin: 0 0 var(--space-xs);
+}
+
+.tool-copy {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  margin: 0 0 var(--space-md);
+}
+
+.tool-fields {
+  margin: 0 0 var(--space-md);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-xs) var(--space-sm);
+}
+
+.tool-fields dt {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: var(--text-muted);
+  padding-top: 2px;
+}
+
+.tool-fields dd {
+  margin: 0;
+  font-size: var(--text-sm);
+}
+
+.tool-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: auto;
+  padding-top: var(--space-sm);
+}
+
+/* ── Process Section ── */
+
+.process-section {
+  margin-top: var(--space-md);
+}
+
+.process-step {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-wide);
+  color: var(--accent);
+  margin: 0 0 var(--space-xs);
+}
+
+.process-tag {
+  margin-left: var(--space-sm);
+}
+
+.process-body {
+  max-width: 720px;
+  margin-top: var(--space-md);
+}
+
+.process-body p {
+  line-height: var(--line-height);
+  color: var(--text-muted);
+  margin: 0 0 var(--space-sm);
+}
+
+.process-body ul {
+  padding-left: var(--space-md);
+  color: var(--text-muted);
+  line-height: var(--line-height);
+  margin: 0 0 var(--space-sm);
+}
+
+.placeholder {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+.placeholder figcaption {
+  margin-top: var(--space-xs);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.process-media {
+  margin-top: var(--space-md);
+  display: grid;
+  gap: var(--space-md);
+}
+
+/* ── Mobile Breakpoint ── */
+
+@media (max-width: 767px) {
+  .project-header h1 {
+    font-size: var(--text-2xl);
+  }
+
+  .dashboard-hero {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title data-i18n="tools.metaTitle">Tools — Creative Lab OpenAI</title>
+  <meta name="description" content="The creative toolkit — specifications for every tool used across both projects: Sora, CapCut, ChatGPT, Claude Code, Suno, NanoBanana, and more." data-i18n-attr="content:tools.metaDescription">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tools — Creative Lab OpenAI" data-i18n-attr="content:tools.metaTitle">
+  <meta property="og:description" content="The creative toolkit — specifications for every tool used across both projects: Sora, CapCut, ChatGPT, Claude Code, Suno, NanoBanana, and more." data-i18n-attr="content:tools.metaDescription">
+  <meta property="og:type" content="website">
+  <!-- Font Preload -->
+  <link rel="preload" href="assets/fonts/JetBrainsMono[wght].woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="shared.a11y.skipToContent">Skip to content</a>
+
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" data-i18n-attr="aria-label:shared.a11y.openMenu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <nav class="sidebar" aria-label="Site navigation" data-i18n-attr="aria-label:shared.a11y.siteNavigation">
+    <button class="sidebar__close" aria-label="Close menu" data-i18n-attr="aria-label:shared.a11y.closeMenu">&times;</button>
+    <a href="index.html" class="sidebar__logo" aria-label="Creative Lab home" data-i18n-attr="aria-label:shared.a11y.homeLink">CL</a>
+
+    <ul class="sidebar__nav">
+      <li><a href="index.html" data-i18n="sidebar.nav.home">Home</a></li>
+      <li><a href="soulborn.html" data-i18n="sidebar.nav.soulborn">Soulborn</a></li>
+      <li><a href="tarot.html" data-i18n="sidebar.nav.tarot">Tarot</a></li>
+      <li><a href="tools.html" class="active" data-i18n="sidebar.nav.tools">Toolchain</a></li>
+      <li><a href="archive.html" data-i18n="sidebar.nav.archive">Archive</a></li>
+    </ul>
+
+    <div class="sidebar__divider"></div>
+
+    <div class="sidebar__lang" role="radiogroup" aria-label="Language" data-i18n-attr="aria-label:shared.a11y.language">
+      <button class="lang-pill" data-lang="fr" role="radio" aria-label="Fran&ccedil;ais" aria-checked="false" data-i18n-attr="aria-label:shared.a11y.languageFrench">FR</button>
+      <button class="lang-pill" data-lang="en" role="radio" aria-label="English" aria-checked="false" data-i18n-attr="aria-label:shared.a11y.languageEnglish">EN</button>
+    </div>
+
+    <div class="sidebar__divider"></div>
+
+    <div class="sidebar__social">
+      <a href="https://x.com/ex0niq" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" data-i18n-attr="aria-label:shared.a11y.socialX">X</a>
+      <a href="https://instagram.com/ex0niq" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-i18n-attr="aria-label:shared.a11y.socialInstagram">IG</a>
+      <a href="https://github.com/ex0niq" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-i18n-attr="aria-label:shared.a11y.socialGithub">GH</a>
+      <a href="https://linkedin.com/in/leon-klein" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-i18n-attr="aria-label:shared.a11y.socialLinkedIn">LI</a>
+    </div>
+
+    <div class="sidebar__divider"></div>
+
+    <div class="sidebar__credit">
+      <a href="https://linkedin.com/in/leon-klein" target="_blank" rel="noopener noreferrer" data-i18n="footer.madeBy">Made by L&eacute;on Klein</a>
+    </div>
+    <div class="sidebar__portfolio">
+      <a href="https://exoniq.io" target="_blank" rel="noopener noreferrer">exoniq.io</a>
+    </div>
+  </nav>
+
+  <main id="main" tabindex="-1">
+    <header class="project-header">
+      <p class="project-eyebrow" data-i18n="tools.eyebrow">Toolchain</p>
+      <h1 data-i18n="tools.title">TOOLS</h1>
+      <p class="project-subtitle" data-i18n="tools.subtitle">The creative toolkit</p>
+      <p class="project-lead" data-i18n="tools.lead">Each tool is presented through the same lens: role, input, output, why it was chosen, limits, and a concrete result inside the final submission.</p>
+    </header>
+    <section class="section">
+      <h2 data-i18n="tools.sectionHeading">Tool Specifications</h2>
+      <div class="grid grid-3">
+
+        <!-- 1. Sora Web App -->
+        <article class="card tool-card reveal">
+          <span class="tag" data-i18n="tools.items.0.tag">Video</span>
+          <h3 data-i18n="tools.items.0.title">Sora Web App</h3>
+          <p class="tool-copy" data-i18n="tools.items.0.copy">Central tool for testing atmospheres, worlds, and staging hypotheses before the final selection.</p>
+          <dl class="tool-fields">
+            <dt data-i18n="tools.fieldLabels.role">Role</dt>
+            <dd data-i18n="tools.items.0.fields.role">Explore cinematic scenes and compare multiple visual directions.</dd>
+            <dt data-i18n="tools.fieldLabels.input">Input</dt>
+            <dd data-i18n="tools.items.0.fields.input">Prompts, reframings, world references, traveler, monolith, suns.</dd>
+            <dt data-i18n="tools.fieldLabels.output">Output</dt>
+            <dd data-i18n="tools.items.0.fields.output">Previews, candidate clips, and demonstration material.</dd>
+            <dt data-i18n="tools.fieldLabels.why">Why</dt>
+            <dd data-i18n="tools.items.0.fields.why">The fastest way to test an impossible world and its camera language.</dd>
+            <dt data-i18n="tools.fieldLabels.limits">Limits</dt>
+            <dd data-i18n="tools.items.0.fields.limits">Rare worlds remain unstable; motion coherence varies.</dd>
+            <dt data-i18n="tools.fieldLabels.result">Concrete result</dt>
+            <dd data-i18n="tools.items.0.fields.result">Direct basis for the Soulborn trailer and process captures.</dd>
+          </dl>
+          <div class="tool-projects">
+            <span class="tag">Soulborn</span>
+          </div>
+        </article>
+
+        <!-- 2. Int Bulk Iterations -->
+        <article class="card tool-card reveal">
+          <span class="tag" data-i18n="tools.items.1.tag">Variations</span>
+          <h3 data-i18n="tools.items.1.title">Int Bulk Iterations</h3>
+          <p class="tool-copy" data-i18n="tools.items.1.copy">Lets you generate families of variants quickly in order to compare useful micro-differences.</p>
+          <dl class="tool-fields">
+            <dt data-i18n="tools.fieldLabels.role">Role</dt>
+            <dd data-i18n="tools.items.1.fields.role">Multiply iterations without restarting from scratch every time.</dd>
+            <dt data-i18n="tools.fieldLabels.input">Input</dt>
+            <dd data-i18n="tools.items.1.fields.input">Prompt or existing base, iteration parameters, targeted visual direction.</dd>
+            <dt data-i18n="tools.fieldLabels.output">Output</dt>
+            <dd data-i18n="tools.items.1.fields.output">Series of video or image variants to sort through.</dd>
+            <dt data-i18n="tools.fieldLabels.why">Why</dt>
+            <dd data-i18n="tools.items.1.fields.why">Ideal for showing process without drowning the page in too many final assets.</dd>
+            <dt data-i18n="tools.fieldLabels.limits">Limits</dt>
+            <dd data-i18n="tools.items.1.fields.limits">It still needs editorial selection, otherwise everything starts to look alike.</dd>
+            <dt data-i18n="tools.fieldLabels.result">Concrete result</dt>
+            <dd data-i18n="tools.items.1.fields.result">Concrete mini examples for Tarot and proof of controlled iteration.</dd>
+          </dl>
+          <div class="tool-projects">
+            <span class="tag">Soulborn</span>
+            <span class="tag">Tarot</span>
+          </div>
+        </article>
+
+        <!-- 3. Int Bulk Generation -->
+        <article class="card tool-card reveal">
+          <span class="tag" data-i18n="tools.items.2.tag">Generation</span>
+          <h3 data-i18n="tools.items.2.title">Int Bulk Generation</h3>
+          <p class="tool-copy" data-i18n="tools.items.2.copy">Designed to show how one intention can produce several close images with readable small variations.</p>
+          <dl class="tool-fields">
+            <dt data-i18n="tools.fieldLabels.role">Role</dt>
+            <dd data-i18n="tools.items.2.fields.role">Produce image batches from a chosen direction.</dd>
+            <dt data-i18n="tools.fieldLabels.input">Input</dt>
+            <dd data-i18n="tools.items.2.fields.input">Prompt, optional references, and a batch-generation logic.</dd>
+            <dt data-i18n="tools.fieldLabels.output">Output</dt>
+            <dd data-i18n="tools.items.2.fields.output">Variant grids to document through screenshots.</dd>
+            <dt data-i18n="tools.fieldLabels.why">Why</dt>
+            <dd data-i18n="tools.items.2.fields.why">Very effective for explaining the path from one idea to a selection.</dd>
+            <dt data-i18n="tools.fieldLabels.limits">Limits</dt>
+            <dd data-i18n="tools.items.2.fields.limits">Without selection, the volume quickly becomes opaque for a jury.</dd>
+            <dt data-i18n="tools.fieldLabels.result">Concrete result</dt>
+            <dd data-i18n="tools.items.2.fields.result">Placeholder already planned for both Soulborn and Tarot captures.</dd>
+          </dl>
+          <div class="tool-projects">
+            <span class="tag">Soulborn</span>
+            <span class="tag">Tarot</span>
+          </div>
+        </article>
+
+        <!-- 4. NanoBanana / bulk-editing -->
+        <article class="card tool-card reveal">
+          <span class="tag" data-i18n="tools.items.3.tag">Pipeline</span>
+          <h3 data-i18n="tools.items.3.title">NanoBanana / bulk-editing</h3>
+          <p class="tool-copy" data-i18n="tools.items.3.copy">Local Python pipeline to extract JSON, merge it with two references, regenerate an image, and remove the Gemini watermark.</p>
+          <dl class="tool-fields">
+            <dt data-i18n="tools.fieldLabels.role">Role</dt>
+            <dd data-i18n="tools.items.3.fields.role">Industrialize a reference-based visual editing workflow.</dd>
+            <dt data-i18n="tools.fieldLabels.input">Input</dt>
+            <dd data-i18n="tools.items.3.fields.input">Source image, two JSON + image references, YAML job, Gemini models.</dd>
+            <dt data-i18n="tools.fieldLabels.output">Output</dt>
+            <dd data-i18n="tools.items.3.fields.output">Run artifacts, cleaned images, manifests, and event logs.</dd>
+            <dt data-i18n="tools.fieldLabels.why">Why</dt>
+            <dd data-i18n="tools.items.3.fields.why">Useful for explaining the technical depth behind some image series.</dd>
+            <dt data-i18n="tools.fieldLabels.limits">Limits</dt>
+            <dd data-i18n="tools.items.3.fields.limits">A more technical workflow, less immediate to read without context.</dd>
+            <dt data-i18n="tools.fieldLabels.result">Concrete result</dt>
+            <dd data-i18n="tools.items.3.fields.result">Pipeline evidence in the bulk-editing folder and its timestamped runs.</dd>
+          </dl>
+          <div class="tool-projects">
+            <span class="tag">Tarot</span>
+          </div>
+        </article>
+
+        <!-- 5. CapCut -->
+        <article class="card tool-card reveal">
+          <span class="tag" data-i18n="tools.items.4.tag">Editing</span>
+          <h3 data-i18n="tools.items.4.title">CapCut</h3>
+          <p class="tool-copy" data-i18n="tools.items.4.copy">Editing turns disparate outputs into a readable, paced, presentable trailer.</p>
+          <dl class="tool-fields">
+            <dt data-i18n="tools.fieldLabels.role">Role</dt>
+            <dd data-i18n="tools.items.4.fields.role">Assemble, trim, pace, and prioritize the visual material.</dd>
+            <dt data-i18n="tools.fieldLabels.input">Input</dt>
+            <dd data-i18n="tools.items.4.fields.input">Selected clips, Suno music, trailer logic, transitions.</dd>
+            <dt data-i18n="tools.fieldLabels.output">Output</dt>
+            <dd data-i18n="tools.items.4.fields.output">Final trailer version and a screen recording of the edit.</dd>
+            <dt data-i18n="tools.fieldLabels.why">Why</dt>
+            <dd data-i18n="tools.items.4.fields.why">This is where the project becomes narrative rather than accumulation.</dd>
+            <dt data-i18n="tools.fieldLabels.limits">Limits</dt>
+            <dd data-i18n="tools.items.4.fields.limits">Editing does not save confused material; it reveals the real choices.</dd>
+            <dt data-i18n="tools.fieldLabels.result">Concrete result</dt>
+            <dd data-i18n="tools.items.4.fields.result">Soulborn trailer V1 and the CapCut capture are already wired into the page.</dd>
+          </dl>
+          <div class="tool-projects">
+            <span class="tag">Soulborn</span>
+          </div>
+        </article>
+
+        <!-- 6. VS Code / Lapin Interactive -->
+        <article class="card tool-card reveal">
+          <span class="tag" data-i18n="tools.items.5.tag">App</span>
+          <h3 data-i18n="tools.items.5.title">VS Code / Lapin Interactive</h3>
+          <p class="tool-copy" data-i18n="tools.items.5.copy">Workspace for developing the tarot experience, with several versions to compare in order to show evolution.</p>
+          <dl class="tool-fields">
+            <dt data-i18n="tools.fieldLabels.role">Role</dt>
+            <dd data-i18n="tools.items.5.fields.role">Build and evolve the interactive tarot experience.</dd>
+            <dt data-i18n="tools.fieldLabels.input">Input</dt>
+            <dd data-i18n="tools.items.5.fields.input">Prompting, UX decisions, previous versions, draw logic.</dd>
+            <dt data-i18n="tools.fieldLabels.output">Output</dt>
+            <dd data-i18n="tools.items.5.fields.output">Interactive app, VS Code captures, and a visible progression history.</dd>
+            <dt data-i18n="tools.fieldLabels.why">Why</dt>
+            <dd data-i18n="tools.items.5.fields.why">Shows that the project is not only an image gallery.</dd>
+            <dt data-i18n="tools.fieldLabels.limits">Limits</dt>
+            <dd data-i18n="tools.items.5.fields.limits">You need a few readable milestones, not everything.</dd>
+            <dt data-i18n="tools.fieldLabels.result">Concrete result</dt>
+            <dd data-i18n="tools.items.5.fields.result">Placeholder section planned for earlier Lapin Interactive versions.</dd>
+          </dl>
+          <div class="tool-projects">
+            <span class="tag">Tarot</span>
+          </div>
+        </article>
+
+        <!-- 7. Obsidian -->
+        <article class="card tool-card reveal">
+          <span class="tag" data-i18n="tools.items.6.tag">Research</span>
+          <h3 data-i18n="tools.items.6.title">Obsidian</h3>
+          <p class="tool-copy" data-i18n="tools.items.6.copy">Obsidian acts as a research memory, idea journal, and proof of documentary depth.</p>
+          <dl class="tool-fields">
+            <dt data-i18n="tools.fieldLabels.role">Role</dt>
+            <dd data-i18n="tools.items.6.fields.role">Structure notes, references, tracks, and process documentation.</dd>
+            <dt data-i18n="tools.fieldLabels.input">Input</dt>
+            <dd data-i18n="tools.items.6.fields.input">Brainstorming, technical documentation, inspirations, project links.</dd>
+            <dt data-i18n="tools.fieldLabels.output">Output</dt>
+            <dd data-i18n="tools.items.6.fields.output">Dated notes, graphs, preparation traces, and pipeline notes.</dd>
+            <dt data-i18n="tools.fieldLabels.why">Why</dt>
+            <dd data-i18n="tools.items.6.fields.why">The graph immediately shows the scale of the research.</dd>
+            <dt data-i18n="tools.fieldLabels.limits">Limits</dt>
+            <dd data-i18n="tools.items.6.fields.limits">The content still needs to be staged so it reads clearly in the final render.</dd>
+            <dt data-i18n="tools.fieldLabels.result">Concrete result</dt>
+            <dd data-i18n="tools.items.6.fields.result">Graph capture still to add, and the NanoBanana note is already identified.</dd>
+          </dl>
+          <div class="tool-projects">
+            <span class="tag">Soulborn</span>
+            <span class="tag">Tarot</span>
+          </div>
+        </article>
+
+        <!-- 8. ChatGPT -->
+        <article class="card tool-card reveal">
+          <span class="tag" data-i18n="tools.items.7.tag">LLM</span>
+          <h3 data-i18n="tools.items.7.title">ChatGPT</h3>
+          <p class="tool-copy" data-i18n="tools.items.7.copy">Used to formulate prompts, clarify intentions, and help write parts of the process.</p>
+          <dl class="tool-fields">
+            <dt data-i18n="tools.fieldLabels.role">Role</dt>
+            <dd data-i18n="tools.items.7.fields.role">Co-write, reframe, and expand creative directions.</dd>
+            <dt data-i18n="tools.fieldLabels.input">Input</dt>
+            <dd data-i18n="tools.items.7.fields.input">Narrative intentions, styles, constraints, and phrasing requests.</dd>
+            <dt data-i18n="tools.fieldLabels.output">Output</dt>
+            <dd data-i18n="tools.items.7.fields.output">Prompts, wording variants, and writing material.</dd>
+            <dt data-i18n="tools.fieldLabels.why">Why</dt>
+            <dd data-i18n="tools.items.7.fields.why">Fast for opening options and sharpening a voice.</dd>
+            <dt data-i18n="tools.fieldLabels.limits">Limits</dt>
+            <dd data-i18n="tools.items.7.fields.limits">Needs strong selection in order to stay faithful to the project.</dd>
+            <dt data-i18n="tools.fieldLabels.result">Concrete result</dt>
+            <dd data-i18n="tools.items.7.fields.result">Included in the recipe and in the list of mentioned tools.</dd>
+          </dl>
+          <div class="tool-projects">
+            <span class="tag">Soulborn</span>
+            <span class="tag">Tarot</span>
+          </div>
+        </article>
+
+        <!-- 9. Codex -->
+        <article class="card tool-card reveal">
+          <span class="tag" data-i18n="tools.items.8.tag">LLM</span>
+          <h3 data-i18n="tools.items.8.title">Codex</h3>
+          <p class="tool-copy" data-i18n="tools.items.8.copy">Used here to structure the render page, synthesize project material, and prepare a presentation that can actually be shown.</p>
+          <dl class="tool-fields">
+            <dt data-i18n="tools.fieldLabels.role">Role</dt>
+            <dd data-i18n="tools.items.8.fields.role">Read source material, structure the story, and build the HTML/CSS/JS site.</dd>
+            <dt data-i18n="tools.fieldLabels.input">Input</dt>
+            <dd data-i18n="tools.items.8.fields.input">Notes, local paths, available assets, and the user's editorial decisions.</dd>
+            <dt data-i18n="tools.fieldLabels.output">Output</dt>
+            <dd data-i18n="tools.items.8.fields.output">Bilingual page, placeholders, and final-render organization.</dd>
+            <dt data-i18n="tools.fieldLabels.why">Why</dt>
+            <dd data-i18n="tools.items.8.fields.why">Helps turn diffuse brainstorming into a concrete structure.</dd>
+            <dt data-i18n="tools.fieldLabels.limits">Limits</dt>
+            <dd data-i18n="tools.items.8.fields.limits">Depends on the quality of the assets that are actually sorted and placed.</dd>
+            <dt data-i18n="tools.fieldLabels.result">Concrete result</dt>
+            <dd data-i18n="tools.items.8.fields.result">The current render site in this folder.</dd>
+          </dl>
+          <div class="tool-projects">
+            <span class="tag">Soulborn</span>
+            <span class="tag">Tarot</span>
+          </div>
+        </article>
+
+        <!-- 10. Claude Code -->
+        <article class="card tool-card reveal">
+          <span class="tag" data-i18n="tools.items.9.tag">LLM</span>
+          <h3 data-i18n="tools.items.9.title">Claude Code</h3>
+          <p class="tool-copy" data-i18n="tools.items.9.copy">Mentioned as another assistant used on the same project, especially around the Obsidian vault.</p>
+          <dl class="tool-fields">
+            <dt data-i18n="tools.fieldLabels.role">Role</dt>
+            <dd data-i18n="tools.items.9.fields.role">Help on some branches of the project and on documentary material.</dd>
+            <dt data-i18n="tools.fieldLabels.input">Input</dt>
+            <dd data-i18n="tools.items.9.fields.input">Obsidian vault context, reflection, and documentary organization.</dd>
+            <dt data-i18n="tools.fieldLabels.output">Output</dt>
+            <dd data-i18n="tools.items.9.fields.output">Documentation complements and textual iteration.</dd>
+            <dt data-i18n="tools.fieldLabels.why">Why</dt>
+            <dd data-i18n="tools.items.9.fields.why">Helps show an ecosystem of tools rather than a single tool.</dd>
+            <dt data-i18n="tools.fieldLabels.limits">Limits</dt>
+            <dd data-i18n="tools.items.9.fields.limits">You still need to stay clear about the exact role of each assistant.</dd>
+            <dt data-i18n="tools.fieldLabels.result">Concrete result</dt>
+            <dd data-i18n="tools.items.9.fields.result">To be cited in the creative documentation and the tool sheet.</dd>
+          </dl>
+          <div class="tool-projects">
+            <span class="tag">Soulborn</span>
+            <span class="tag">Tarot</span>
+          </div>
+        </article>
+
+        <!-- 11. Suno -->
+        <article class="card tool-card reveal">
+          <span class="tag" data-i18n="tools.items.10.tag">Music</span>
+          <h3 data-i18n="tools.items.10.title">Suno</h3>
+          <p class="tool-copy" data-i18n="tools.items.10.copy">Source of the trailer music, documented through a specific prompt already kept in the folder.</p>
+          <dl class="tool-fields">
+            <dt data-i18n="tools.fieldLabels.role">Role</dt>
+            <dd data-i18n="tools.items.10.fields.role">Give rhythm and sonic coherence to the final edit.</dd>
+            <dt data-i18n="tools.fieldLabels.input">Input</dt>
+            <dd data-i18n="tools.items.10.fields.input">Music directions, intensity references, and atmosphere cues.</dd>
+            <dt data-i18n="tools.fieldLabels.output">Output</dt>
+            <dd data-i18n="tools.items.10.fields.output">Selected track for the Soulborn trailer transitions.</dd>
+            <dt data-i18n="tools.fieldLabels.why">Why</dt>
+            <dd data-i18n="tools.items.10.fields.why">The music helps hold the successive worlds together.</dd>
+            <dt data-i18n="tools.fieldLabels.limits">Limits</dt>
+            <dd data-i18n="tools.items.10.fields.limits">It must stay in service of the edit, not the other way around.</dd>
+            <dt data-i18n="tools.fieldLabels.result">Concrete result</dt>
+            <dd data-i18n="tools.items.10.fields.result">Music prompt already integrated into the Soulborn section.</dd>
+          </dl>
+          <div class="tool-projects">
+            <span class="tag">Soulborn</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="content.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="app.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/interactions.js"></script>
+</body>
+</html>

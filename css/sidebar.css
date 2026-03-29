@@ -1,0 +1,301 @@
+/* ══════════════════════════════════════════════
+   sidebar.css — Sidebar Navigation Styles
+   Creative Lab · Paris 8
+   ══════════════════════════════════════════════ */
+
+/* ── Sidebar Layout ── */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border);
+  padding: var(--space-lg) 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+/* ── Logo ── */
+
+.sidebar__logo {
+  display: block;
+  padding: 0 var(--space-md);
+  margin-bottom: var(--space-lg);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  letter-spacing: var(--letter-wide);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.sidebar__logo:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
+/* ── Navigation ── */
+
+.sidebar__nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.sidebar__nav a {
+  display: block;
+  padding: 12px var(--space-md);
+  color: var(--text);
+  text-decoration: none;
+  font-size: var(--text-base);
+  border-left: 3px solid transparent;
+  transition: color 0.15s var(--ease), border-color 0.15s var(--ease), background-color 0.15s var(--ease);
+}
+
+.sidebar__nav a:hover {
+  background: rgba(191, 90, 48, 0.05);
+  color: var(--accent);
+}
+
+.sidebar__nav a.active {
+  border-left-color: var(--accent);
+  font-weight: 600;
+}
+
+.sidebar__nav a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
+/* ── Social Links ── */
+
+.sidebar__social {
+  display: flex;
+  gap: var(--space-sm);
+  padding: 0 var(--space-md);
+}
+
+.sidebar__social a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  transition: color var(--duration) var(--ease);
+}
+
+.sidebar__social a:hover {
+  color: var(--accent);
+}
+
+.sidebar__social a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
+/* ── Credit & Portfolio ── */
+
+.sidebar__credit,
+.sidebar__portfolio {
+  padding: 0 var(--space-md);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.sidebar__credit a,
+.sidebar__portfolio a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--duration) var(--ease);
+}
+
+.sidebar__credit a:hover,
+.sidebar__portfolio a:hover {
+  color: var(--accent);
+}
+
+.sidebar__credit a:focus-visible,
+.sidebar__portfolio a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
+/* ── Divider ── */
+
+.sidebar__divider {
+  height: 1px;
+  background: var(--border);
+  margin: var(--space-sm) var(--space-md);
+}
+
+/* ── Language Toggle ── */
+
+.sidebar__lang {
+  padding: 0 var(--space-md);
+  display: flex;
+  gap: 4px;
+}
+
+.lang-pill {
+  border: none;
+  background: transparent;
+  padding: 6px 12px;
+  font-family: var(--font);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color var(--duration) var(--ease), font-weight var(--duration) var(--ease);
+}
+
+.lang-pill:hover {
+  color: var(--text);
+}
+
+.lang-pill.is-active {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.lang-pill:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
+/* ── Main Content Offset ── */
+
+body {
+  margin-left: var(--sidebar-width);
+  padding: 0 var(--space-lg);
+}
+
+/* ── Hamburger Button ── */
+
+.hamburger {
+  display: none; /* Hidden on desktop */
+  position: fixed;
+  top: var(--space-sm);
+  left: var(--space-sm);
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-surface);
+  border: var(--border-width) solid var(--shadow-color);
+  box-shadow: 3px 3px 0 var(--shadow-color);
+  cursor: pointer;
+  z-index: 200;
+  padding: 8px;
+  font-family: var(--font);
+}
+
+.hamburger:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.hamburger-line {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  margin: 3px 0;
+}
+
+/* ── Sidebar Overlay ── */
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0;
+  background: rgba(28, 25, 23, 0.4);
+  z-index: 99;
+}
+
+.sidebar-overlay.active {
+  display: block;
+}
+
+/* ── Sidebar Close Button ── */
+
+.sidebar__close {
+  display: none; /* Hidden on desktop */
+}
+
+/* ── Mobile Breakpoint ── */
+
+@media (max-width: 767px) {
+  body {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s var(--ease);
+    z-index: 300;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    min-width: 44px;
+    min-height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: var(--text-lg);
+    color: var(--text);
+    font-family: var(--font);
+  }
+
+  .sidebar__close:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: -3px;
+  }
+
+  /* Ensure touch targets on sidebar links */
+  .sidebar__nav a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .sidebar__social a {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lang-pill {
+    min-height: 44px;
+  }
+}
+
+/* ── Reduced Motion ── */
+
+@media (prefers-reduced-motion: reduce) {
+  .sidebar {
+    transition: none;
+  }
+}

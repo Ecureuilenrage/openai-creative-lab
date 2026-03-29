@@ -1,0 +1,156 @@
+/* ══════════════════════════════════════════════
+   homepage.css — Homepage-Specific Styles
+   Creative Lab · Paris 8
+   ══════════════════════════════════════════════ */
+
+/* ── Homepage Hero ── */
+
+.homepage-hero {
+  padding: var(--space-lg) 0 0;
+}
+
+.homepage-hero h1 {
+  font-size: clamp(var(--text-2xl), 5vw, var(--text-3xl));
+  font-weight: 700;
+  letter-spacing: var(--letter-tight);
+  margin: 0 0 var(--space-lg);
+  color: var(--text);
+}
+
+/* ── Portal ── */
+
+.portal {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--text);
+  overflow: hidden;
+  padding: 0;
+}
+
+.portal-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  border-bottom: var(--border-width) solid var(--shadow-color);
+  background: var(--bg-surface);
+}
+
+.portal-content {
+  padding: var(--space-md);
+}
+
+.portal h2 {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-tight);
+  margin: 0 0 var(--space-xs);
+}
+
+.portal p {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.portal:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ── Preview Card ── */
+
+.preview-card {
+  padding: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.preview-card__title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-tight);
+  margin: 0;
+}
+
+.preview-card__stat {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0;
+}
+
+.preview-card__btn {
+  align-self: flex-start;
+}
+
+/* ── Homepage Intro ── */
+
+.homepage-intro {
+  font-size: var(--text-base);
+  line-height: var(--line-height);
+  color: var(--text);
+  margin: 0;
+}
+
+/* ── Homepage Footer ── */
+
+.homepage-footer {
+  border-top: var(--border-width) solid var(--border);
+  padding: var(--space-lg) 0;
+}
+
+.homepage-footer__social {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.homepage-footer__social a {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-wide);
+}
+
+.homepage-footer__social a:hover {
+  color: var(--accent);
+}
+
+.homepage-footer__social a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.homepage-footer__credit {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.homepage-footer__credit a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.homepage-footer__credit a:hover {
+  color: var(--accent);
+}
+
+.homepage-footer__credit a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 767px) {
+  .homepage-hero {
+    padding: var(--space-md) 0 0;
+  }
+}

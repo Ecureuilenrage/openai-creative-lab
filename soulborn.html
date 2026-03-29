@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title data-i18n="soulborn.metaTitle">Soulborn — Creative Lab OpenAI</title>
+  <meta name="description" content="AI world creation with Sora — exploring the limits of video generation to create an original animated universe." data-i18n-attr="content:soulborn.metaDescription">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Soulborn — Creative Lab OpenAI" data-i18n-attr="content:soulborn.metaTitle">
+  <meta property="og:description" content="AI world creation with Sora — exploring the limits of video generation to create an original animated universe." data-i18n-attr="content:soulborn.metaDescription">
+  <meta property="og:type" content="website">
+  <!-- Font Preload -->
+  <link rel="preload" href="assets/fonts/JetBrainsMono[wght].woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="shared.a11y.skipToContent">Skip to content</a>
+
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" data-i18n-attr="aria-label:shared.a11y.openMenu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <nav class="sidebar" aria-label="Site navigation" data-i18n-attr="aria-label:shared.a11y.siteNavigation">
+    <button class="sidebar__close" aria-label="Close menu" data-i18n-attr="aria-label:shared.a11y.closeMenu">&times;</button>
+    <a href="index.html" class="sidebar__logo" aria-label="Creative Lab home" data-i18n-attr="aria-label:shared.a11y.homeLink">CL</a>
+
+    <ul class="sidebar__nav">
+      <li><a href="index.html" data-i18n="sidebar.nav.home">Home</a></li>
+      <li><a href="soulborn.html" class="active" data-i18n="sidebar.nav.soulborn">Soulborn</a></li>
+      <li><a href="tarot.html" data-i18n="sidebar.nav.tarot">Tarot</a></li>
+      <li><a href="tools.html" data-i18n="sidebar.nav.tools">Toolchain</a></li>
+      <li><a href="archive.html" data-i18n="sidebar.nav.archive">Archive</a></li>
+    </ul>
+
+    <div class="sidebar__divider"></div>
+
+    <div class="sidebar__lang" role="radiogroup" aria-label="Language" data-i18n-attr="aria-label:shared.a11y.language">
+      <button class="lang-pill" data-lang="fr" role="radio" aria-label="Fran&ccedil;ais" aria-checked="false" data-i18n-attr="aria-label:shared.a11y.languageFrench">FR</button>
+      <button class="lang-pill" data-lang="en" role="radio" aria-label="English" aria-checked="false" data-i18n-attr="aria-label:shared.a11y.languageEnglish">EN</button>
+    </div>
+
+    <div class="sidebar__divider"></div>
+
+    <div class="sidebar__social">
+      <a href="https://x.com/ex0niq" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" data-i18n-attr="aria-label:shared.a11y.socialX">X</a>
+      <a href="https://instagram.com/ex0niq" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-i18n-attr="aria-label:shared.a11y.socialInstagram">IG</a>
+      <a href="https://github.com/ex0niq" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-i18n-attr="aria-label:shared.a11y.socialGithub">GH</a>
+      <a href="https://linkedin.com/in/leon-klein" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-i18n-attr="aria-label:shared.a11y.socialLinkedIn">LI</a>
+    </div>
+
+    <div class="sidebar__divider"></div>
+
+    <div class="sidebar__credit">
+      <a href="https://linkedin.com/in/leon-klein" target="_blank" rel="noopener noreferrer" data-i18n="footer.madeBy">Made by L&eacute;on Klein</a>
+    </div>
+    <div class="sidebar__portfolio">
+      <a href="https://exoniq.io" target="_blank" rel="noopener noreferrer">exoniq.io</a>
+    </div>
+  </nav>
+
+  <main id="main" tabindex="-1">
+    <header class="project-header">
+      <p class="project-eyebrow" data-i18n="soulborn.eyebrow">Soulborn</p>
+      <h1 data-i18n="soulborn.title">The official trailer: traveler, monolith, successive worlds</h1>
+      <p class="project-subtitle" data-i18n="soulborn.subtitle">AI world creation with Sora</p>
+      <p class="project-lead" data-i18n="soulborn.lead">The narrative stays honest: literary inspiration, creative block, still-life tests and other Sora capabilities, then a return to a scene directly inspired by the book currently being read.</p>
+    </header>
+    <section class="section" id="dashboard">
+      <div class="dashboard-hero">
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/wB7MNWWW6IA?si=vDXkGldH7O6xbrFR"
+            title="Soulborn — Final Trailer"
+            data-i18n-attr="title:soulborn.trailer.iframeTitle"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+
+        <nav class="dashboard-nav dashboard-nav--col" aria-label="Project sections" data-i18n-attr="aria-label:shared.a11y.projectSections">
+          <a href="#concept" class="card"><span class="dashboard-nav__label" data-i18n="soulborn.sections.concept.heading">Concept & Vision</span></a>
+          <a href="#iterations" class="card"><span class="dashboard-nav__label" data-i18n="soulborn.sections.iterations.heading">Iterations</span></a>
+          <a href="#pivots" class="card"><span class="dashboard-nav__label" data-i18n="soulborn.sections.pivots.heading">Pivots</span></a>
+          <a href="#production" class="card"><span class="dashboard-nav__label" data-i18n="soulborn.sections.production.heading">Production</span></a>
+          <a href="#music" class="card"><span class="dashboard-nav__label" data-i18n="soulborn.sections.music.heading">Music & Sound</span></a>
+          <a href="#result" class="card"><span class="dashboard-nav__label" data-i18n="soulborn.sections.result.heading">Final Result</span></a>
+        </nav>
+      </div>
+
+      <div class="dashboard-tags">
+        <span class="tag">Sora</span>
+        <span class="tag">CapCut</span>
+        <span class="tag">ChatGPT</span>
+        <span class="tag">Suno</span>
+        <span class="tag">NanoBanana</span>
+        <span class="tag">Obsidian</span>
+      </div>
+    </section>
+    <section class="section" id="concept">
+      <div class="process-section reveal">
+        <p class="process-step">01</p>
+        <h2 data-i18n="soulborn.sections.concept.heading">Concept & Vision</h2>
+        <span class="tag process-tag" data-i18n="soulborn.sections.concept.tag">Story frame</span>
+        <div class="process-body">
+          <p data-i18n="soulborn.lead">The narrative stays honest: literary inspiration, creative block, still-life tests and other Sora capabilities, then a return to a scene directly inspired by the book currently being read.</p>
+          <ul>
+            <li data-i18n="soulborn.sections.concept.points.0">Start with the literary inspiration, then explain the creative block and the need to test Sora across multiple directions before finding the right form.</li>
+            <li data-i18n="soulborn.sections.concept.points.1">Say clearly that a water-filled world with seven suns was visually difficult because those combinations barely exist in the references seen by the models.</li>
+            <li data-i18n="soulborn.sections.concept.points.2">Present the pivot as a productive decision: adding an animated object or presence makes the scene clearer and more alive.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="iterations">
+      <div class="process-section reveal">
+        <p class="process-step">02</p>
+        <h2 data-i18n="soulborn.sections.iterations.heading">Iterations</h2>
+        <span class="tag process-tag" data-i18n="soulborn.sections.iterations.tag">Sora Web App</span>
+        <div class="process-body">
+          <p data-i18n="soulborn.sections.iterations.copy">To show as visual research evidence: exploration of possibilities, atmosphere tests, then a refocus on the traveler and the monolith.</p>
+          <div class="process-media">
+            <div class="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/8qwdrzuAX5A?si=B_bdb8q3cRLYIu0g"
+                title="Screen capture of the Sora web app"
+                data-i18n-attr="title:soulborn.sections.iterations.title"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+            <figure class="placeholder">
+              <p data-i18n="soulborn.sections.iterations.placeholders.0.art">Placeholder &middot; screenshots of bulk image variants</p>
+              <figcaption data-i18n="soulborn.sections.iterations.placeholders.0.copy">Slot for captures showing how the same idea yields many close images with small useful variations.</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/images/obsidian.webp" type="image/webp">
+                <img src="assets/images/obsidian.png"
+                     alt="Obsidian research graph showing brainstorming documentation and cross-links between ideas"
+                     data-i18n-attr="alt:soulborn.sections.iterations.placeholders.1.alt"
+                     loading="lazy"
+                     width="1390"
+                     height="1146">
+              </picture>
+              <figcaption data-i18n="soulborn.sections.iterations.placeholders.1.title">Research graph and depth of preparation</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="pivots">
+      <div class="process-section reveal">
+        <p class="process-step">03</p>
+        <h2 data-i18n="soulborn.sections.pivots.heading">Pivots</h2>
+        <span class="tag process-tag" data-i18n="soulborn.sections.pivots.tag">Pivots</span>
+        <div class="process-body">
+          <p data-i18n="soulborn.sections.pivots.copy">A water-filled world with seven suns was visually difficult because those combinations barely exist in the references seen by the models. The turning point came from a productive decision: adding an animated object or presence — the shark, the creature — made the scene clearer and more alive. What started as a constraint became a narrative strength, giving each world a living anchor that guides the viewer through the journey.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="production">
+      <div class="process-section reveal">
+        <p class="process-step">04</p>
+        <h2 data-i18n="soulborn.sections.production.heading">Production</h2>
+        <span class="tag process-tag" data-i18n="soulborn.sections.production.tag">CapCut</span>
+        <div class="process-body">
+          <p data-i18n="soulborn.sections.production.copy">This capture supports the bridge between generated material and final composition: pacing, cut choices, and a more cinematic reading.</p>
+          <div class="process-media">
+            <div class="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/MgTqwfftCEY?si=XrImc9NtrLCGJVkX"
+                title="Screen recording of the trailer edit in CapCut"
+                data-i18n-attr="title:soulborn.sections.production.title"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="music">
+      <div class="process-section reveal">
+        <p class="process-step">05</p>
+        <h2 data-i18n="soulborn.sections.music.heading">Music & Sound</h2>
+        <span class="tag process-tag" data-i18n="soulborn.sections.music.tag">Music</span>
+        <div class="process-body">
+          <p data-i18n="soulborn.sections.music.copy">The trailer uses the track selected in the Suno working document, with a rhythm designed for fast transitions between worlds.</p>
+          <blockquote>
+            <p><strong data-i18n="soulborn.sections.music.promptTitle">4 — Crossing worlds (rapid transitions)</strong></p>
+            <p data-i18n="soulborn.sections.music.prompt">"Hybrid orchestral electronic, glitchy synth textures layered with full orchestra, rapid percussive hits, whooshes between sections, each section shifts genre slightly, cinematic trailer music, intense, 110 BPM"</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="result">
+      <div class="process-section reveal">
+        <p class="process-step">06</p>
+        <h2 data-i18n="soulborn.sections.result.heading">Final Result</h2>
+        <span class="tag process-tag" data-i18n="soulborn.sections.result.tag">Final trailer</span>
+        <div class="process-body">
+          <p data-i18n="soulborn.sections.result.copy">The page opens on the current final result before returning to the making-of, image iterations, and editing process.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="text-align: center;">
+      <a href="tarot.html" class="btn btn--md" data-i18n="navigation.nextTarot">Next: Tarot</a>
+    </section>
+  </main>
+
+  <script src="content.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="app.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/interactions.js"></script>
+</body>
+</html>

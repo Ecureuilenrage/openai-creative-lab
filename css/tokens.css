@@ -1,0 +1,72 @@
+/* ══════════════════════════════════════════════
+   tokens.css — Design Tokens & CSS Reset
+   Creative Lab · Paris 8
+   ══════════════════════════════════════════════ */
+
+/* ── CSS Reset ── */
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: 'JetBrains Mono', monospace; color: var(--text); background: var(--bg); line-height: var(--line-height); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* ── Font Face ── */
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url('../assets/fonts/JetBrainsMono[wght].woff2') format('woff2');
+}
+
+/* ── Design Tokens ── */
+
+:root {
+  /* ── Palette — Paper ── */
+  --bg: #faf8f4;
+  --bg-surface: #f0ede5;
+  --border: #e0dbd0;
+  --text: #1c1917;
+  --text-muted: #6b5e4f;
+  --accent: #bf5a30;
+  --accent-hover: #a04825;
+  --shadow-color: #1c1917;
+
+  /* ── Semantic Colors ── */
+  --success: #3d7c47;
+  --warning: #bf8c30;
+  --error: #bf3030;
+  --info: #3068a8;
+
+  /* ── Typography — JetBrains Mono ── */
+  --font: 'JetBrains Mono', monospace;
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 15px;
+  --text-lg: 18px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+  --text-3xl: 42px;
+  --line-height: 1.8;
+  --letter-tight: -1px;
+  --letter-wide: 3px;
+
+  /* ── Spacing — 8px base ── */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 48px;
+  --space-xl: 80px;
+  --space-section: 120px;
+
+  /* ── Component Tokens ── */
+  --radius: 8px;
+  --border-width: 2px;
+  --shadow-offset: 6px;
+  --shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--shadow-color);
+  --sidebar-width: 240px;
+
+  /* ── Transitions ── */
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --duration: 0.2s;
+  --duration-slow: 0.4s;
+}

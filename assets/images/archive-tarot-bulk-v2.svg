@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f7f1e8"/>
+  <rect x="44" y="44" width="1192" height="632" rx="28" fill="#1c1917"/>
+  <rect x="92" y="110" width="248" height="392" rx="22" fill="#f7f1e8"/>
+  <rect x="368" y="110" width="248" height="392" rx="22" fill="#eadfd2"/>
+  <rect x="644" y="110" width="248" height="392" rx="22" fill="#f7f1e8"/>
+  <rect x="920" y="110" width="248" height="392" rx="22" fill="#eadfd2"/>
+  <rect x="92" y="532" width="1076" height="38" rx="12" fill="#bf5a30"/>
+  <text x="92" y="620" fill="#f7f1e8" font-family="JetBrains Mono, monospace" font-size="54" font-weight="700">TAROT ITERATION V2</text>
+  <text x="92" y="658" fill="#d6c7b3" font-family="JetBrains Mono, monospace" font-size="24">REFRAMED CHOICES / BETTER COHERENCE / READABILITY</text>
+</svg>

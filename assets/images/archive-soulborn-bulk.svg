@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f7f1e8"/>
+  <rect x="44" y="44" width="1192" height="632" rx="28" fill="#1c1917"/>
+  <rect x="96" y="120" width="248" height="166" rx="18" fill="#24425c"/>
+  <rect x="364" y="120" width="248" height="166" rx="18" fill="#335d84"/>
+  <rect x="632" y="120" width="248" height="166" rx="18" fill="#406f9a"/>
+  <rect x="900" y="120" width="248" height="166" rx="18" fill="#507fa7"/>
+  <rect x="96" y="322" width="1052" height="214" rx="22" fill="#f7f1e8"/>
+  <text x="96" y="594" fill="#f7f1e8" font-family="JetBrains Mono, monospace" font-size="54" font-weight="700">SOULBORN BULK VARIANTS</text>
+  <text x="96" y="636" fill="#d6c7b3" font-family="JetBrains Mono, monospace" font-size="24">ATMOSPHERE TESTS / MONOLITH / TRAVELER / WORLD STUDIES</text>
+</svg>

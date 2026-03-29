@@ -1,0 +1,110 @@
+/* ══════════════════════════════════════════════
+   animations.css — Scroll Reveal & Interaction Animations
+   Creative Lab · Paris 8
+   ══════════════════════════════════════════════ */
+
+/* ── Scroll Reveal ── */
+
+/* Elements are only hidden when JS is active (adds .js class to <html>).
+   Without JS, .reveal elements stay visible at default opacity. */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--duration-slow) var(--ease), transform var(--duration-slow) var(--ease);
+}
+
+.js .reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Grid Children Stagger ── */
+
+.js .grid > .reveal:nth-child(2) { transition-delay: 100ms; }
+.js .grid > .reveal:nth-child(3) { transition-delay: 200ms; }
+.js .grid > .reveal:nth-child(4) { transition-delay: 300ms; }
+.js .grid > .reveal:nth-child(5) { transition-delay: 400ms; }
+.js .grid > .reveal:nth-child(6) { transition-delay: 500ms; }
+.js .grid > .reveal:nth-child(7) { transition-delay: 600ms; }
+.js .grid > .reveal:nth-child(8) { transition-delay: 700ms; }
+
+/* ── Content Text Links ── */
+
+main a:not(.btn):not(.card):not(.skip-link) {
+  color: var(--accent);
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.18em;
+  transition: color 0.15s var(--ease), text-decoration-color 0.15s var(--ease);
+}
+
+main a:not(.btn):not(.card):not(.skip-link):hover,
+main a:not(.btn):not(.card):not(.skip-link):focus-visible {
+  color: var(--accent-hover);
+  text-decoration-color: var(--accent);
+}
+
+/* ── Custom Cursor ── */
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  opacity: 0;
+  border-radius: 50%;
+  border: 1.5px solid var(--shadow-color);
+  background: transparent;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.15s var(--ease), height 0.15s var(--ease), background 0.15s var(--ease), border-color 0.15s var(--ease);
+}
+
+.custom-cursor--expand {
+  width: 32px;
+  height: 32px;
+  background: rgba(191, 90, 48, 0.15);
+  border-color: transparent;
+}
+
+.custom-cursor--shrink {
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-color: transparent;
+}
+
+body.cursor-active,
+body.cursor-active a,
+body.cursor-active button,
+body.cursor-active .card,
+body.cursor-active .btn {
+  cursor: none;
+}
+
+/* ── Reduced Motion Override ── */
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .card,
+  .btn,
+  .sidebar__nav a,
+  .sidebar__social a,
+  .sidebar__credit a,
+  .sidebar__portfolio a,
+  .lang-pill,
+  main a:not(.btn):not(.card):not(.skip-link) {
+    transition-duration: 0s;
+  }
+
+  .custom-cursor {
+    transition-duration: 0s;
+  }
+}

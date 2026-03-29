@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title data-i18n="tarot.metaTitle">Tarot — Creative Lab OpenAI</title>
+  <meta name="description" content="Interactive AI-generated tarot card experience — from visual exploration to a live web application at tarot.exoniq.io." data-i18n-attr="content:tarot.metaDescription">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tarot — Creative Lab OpenAI" data-i18n-attr="content:tarot.metaTitle">
+  <meta property="og:description" content="Interactive AI-generated tarot card experience — from visual exploration to a live web application at tarot.exoniq.io." data-i18n-attr="content:tarot.metaDescription">
+  <meta property="og:type" content="website">
+  <!-- Font Preload -->
+  <link rel="preload" href="assets/fonts/JetBrainsMono[wght].woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+<body>
+  <a href="#main" class="skip-link" data-i18n="shared.a11y.skipToContent">Skip to content</a>
+
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false" data-i18n-attr="aria-label:shared.a11y.openMenu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <nav class="sidebar" aria-label="Site navigation" data-i18n-attr="aria-label:shared.a11y.siteNavigation">
+    <button class="sidebar__close" aria-label="Close menu" data-i18n-attr="aria-label:shared.a11y.closeMenu">&times;</button>
+    <a href="index.html" class="sidebar__logo" aria-label="Creative Lab home" data-i18n-attr="aria-label:shared.a11y.homeLink">CL</a>
+
+    <ul class="sidebar__nav">
+      <li><a href="index.html" data-i18n="sidebar.nav.home">Home</a></li>
+      <li><a href="soulborn.html" data-i18n="sidebar.nav.soulborn">Soulborn</a></li>
+      <li><a href="tarot.html" class="active" data-i18n="sidebar.nav.tarot">Tarot</a></li>
+      <li><a href="tools.html" data-i18n="sidebar.nav.tools">Toolchain</a></li>
+      <li><a href="archive.html" data-i18n="sidebar.nav.archive">Archive</a></li>
+    </ul>
+
+    <div class="sidebar__divider"></div>
+
+    <div class="sidebar__lang" role="radiogroup" aria-label="Language" data-i18n-attr="aria-label:shared.a11y.language">
+      <button class="lang-pill" data-lang="fr" role="radio" aria-label="Fran&ccedil;ais" aria-checked="false" data-i18n-attr="aria-label:shared.a11y.languageFrench">FR</button>
+      <button class="lang-pill" data-lang="en" role="radio" aria-label="English" aria-checked="false" data-i18n-attr="aria-label:shared.a11y.languageEnglish">EN</button>
+    </div>
+
+    <div class="sidebar__divider"></div>
+
+    <div class="sidebar__social">
+      <a href="https://x.com/ex0niq" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" data-i18n-attr="aria-label:shared.a11y.socialX">X</a>
+      <a href="https://instagram.com/ex0niq" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-i18n-attr="aria-label:shared.a11y.socialInstagram">IG</a>
+      <a href="https://github.com/ex0niq" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-i18n-attr="aria-label:shared.a11y.socialGithub">GH</a>
+      <a href="https://linkedin.com/in/leon-klein" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-i18n-attr="aria-label:shared.a11y.socialLinkedIn">LI</a>
+    </div>
+
+    <div class="sidebar__divider"></div>
+
+    <div class="sidebar__credit">
+      <a href="https://linkedin.com/in/leon-klein" target="_blank" rel="noopener noreferrer" data-i18n="footer.madeBy">Made by L&eacute;on Klein</a>
+    </div>
+    <div class="sidebar__portfolio">
+      <a href="https://exoniq.io" target="_blank" rel="noopener noreferrer">exoniq.io</a>
+    </div>
+  </nav>
+
+  <main id="main" tabindex="-1">
+    <header class="project-header">
+      <p class="project-eyebrow" data-i18n="tarot.eyebrow">Tarot</p>
+      <h1 data-i18n="tarot.title">Lapin Interactive: from stained-glass experiments to a minimalist deck</h1>
+      <p class="project-subtitle" data-i18n="tarot.subtitle">Interactive AI application</p>
+      <p class="project-lead" data-i18n="tarot.lead">The Tarot chapter shows less of a single final climax and more of a directional evolution: a series of visual tests, a step back on what truly worked, then a more coherent video deck for the interactive experience.</p>
+    </header>
+    <section class="section" id="dashboard">
+      <a href="https://tarot.exoniq.io" target="_blank" rel="noopener noreferrer" class="btn btn--lg" data-i18n="tarot.liveCta">Open the tarot experience</a>
+
+      <div class="dashboard-tags">
+        <span class="tag">ChatGPT</span>
+        <span class="tag">Codex</span>
+        <span class="tag">Int Bulk</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">Claude Code</span>
+      </div>
+
+      <nav class="dashboard-nav grid grid-3" aria-label="Project sections" data-i18n-attr="aria-label:shared.a11y.projectSections">
+        <a href="#exploration" class="card"><span class="dashboard-nav__label" data-i18n="tarot.sections.exploration.heading">Visual Exploration</span></a>
+        <a href="#evolution" class="card"><span class="dashboard-nav__label" data-i18n="tarot.sections.styleEvolution.heading">Style Evolution</span></a>
+        <a href="#generation" class="card"><span class="dashboard-nav__label" data-i18n="tarot.sections.bulkGeneration.heading">Bulk Generation</span></a>
+        <a href="#app" class="card"><span class="dashboard-nav__label" data-i18n="tarot.sections.app.heading">Interactive App</span></a>
+        <a href="#experience" class="card"><span class="dashboard-nav__label" data-i18n="tarot.sections.finalExperience.heading">Final Experience</span></a>
+      </nav>
+    </section>
+    <section class="section" id="exploration">
+      <div class="process-section reveal">
+        <p class="process-step">01</p>
+        <h2 data-i18n="tarot.sections.exploration.heading">Visual Exploration</h2>
+        <span class="tag process-tag" data-i18n="tarot.sections.exploration.tag">Process frame</span>
+        <div class="process-body">
+          <p data-i18n="tarot.sections.exploration.introCopy">The chosen narrative arc for this project is to show the evolution of Lapin Interactive as a creative process — rather than presenting a simple gallery of finished tarot cards. Each section below traces a key stage of that journey.</p>
+          <ul>
+            <li data-i18n="tarot.sections.exploration.points.0">Show the evolution of Lapin Interactive rather than a simple gallery of cards.</li>
+            <li data-i18n="tarot.sections.exploration.points.1">Explain that the early stained-glass video attempts were kept as still images inside the project, but not as the final direction for the clips.</li>
+            <li data-i18n="tarot.sections.exploration.points.2">Highlight the minimalist deck as a choice for readability, coherence, and efficiency in the final experience.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="evolution">
+      <div class="process-section reveal">
+        <p class="process-step">02</p>
+        <h2 data-i18n="tarot.sections.styleEvolution.heading">Style Evolution</h2>
+        <span class="tag process-tag" data-i18n="tarot.sections.styleEvolution.tag">Style Evolution</span>
+        <div class="process-body">
+          <p data-i18n="tarot.sections.styleEvolution.copy">The transition from ornate stained-glass styles to a minimalist deck was driven by three priorities: readability, coherence, and efficiency. Early experiments produced visually rich but heavy cards that competed with each other — the final direction embraces restraint so the deck works as a unified system.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="generation">
+      <div class="process-section reveal">
+        <p class="process-step">03</p>
+        <h2 data-i18n="tarot.sections.bulkGeneration.heading">Bulk Generation</h2>
+        <span class="tag process-tag" data-i18n="tarot.sections.bulkGeneration.heading">Bulk Generation</span>
+        <div class="process-body">
+          <p data-i18n="tarot.sections.bulkGeneration.copy">Controlled variation was essential to producing a full 78-card deck. The bulk generation pipeline combined prompt engineering with systematic iteration — each pass refining framing, coherence, and readability across the entire set.</p>
+          <div class="process-media">
+            <div class="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/JEqVGvyrjsI?si=LwN3oP0E4cvZCkM9"
+                title="Int Bulk Iterations 1"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+            <div class="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/J8OFkF3Ft-g?si=NMat_FWL-uT77lIl"
+                title="Int Bulk Iterations 2"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="app">
+      <div class="process-section reveal">
+        <p class="process-step">04</p>
+        <h2 data-i18n="tarot.sections.app.heading">Interactive App</h2>
+        <span class="tag process-tag" data-i18n="tarot.sections.app.tag">Interactive App</span>
+        <div class="process-body">
+          <p data-i18n="tarot.sections.app.copy">Building the interactive tarot experience evolved across multiple versions — from early prototypes inside VS Code to the polished web application. Each iteration refined the draw mechanic, card reveal animations, and reading logic to create a cohesive ritual-like experience.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="experience">
+      <div class="process-section reveal">
+        <p class="process-step">05</p>
+        <h2 data-i18n="tarot.sections.finalExperience.heading">Final Experience</h2>
+        <span class="tag process-tag" data-i18n="tarot.sections.finalExperience.tag">Final experience</span>
+        <div class="process-body">
+          <p data-i18n="tarot.sections.finalExperience.bodyCopy">From stained-glass experiments to a minimalist 78-card deck, from VS Code prototypes to a live ritual-like draw experience — the Tarot project traces a complete creative journey through AI-assisted design and development.</p>
+          <a href="https://tarot.exoniq.io" target="_blank" rel="noopener noreferrer" class="btn btn--md" data-i18n="tarot.liveCta">Open the tarot experience</a>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="text-align: center;">
+      <a href="tools.html" class="btn btn--md" data-i18n="navigation.nextTools">Next: Tools</a>
+    </section>
+  </main>
+
+  <script src="content.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="app.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/interactions.js"></script>
+</body>
+</html>

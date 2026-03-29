@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f7f1e8"/>
+  <rect x="44" y="44" width="1192" height="632" rx="28" fill="#1c1917"/>
+  <rect x="96" y="104" width="168" height="232" rx="18" fill="#f7f1e8"/>
+  <rect x="288" y="104" width="168" height="232" rx="18" fill="#eadfd2"/>
+  <rect x="480" y="104" width="168" height="232" rx="18" fill="#f7f1e8"/>
+  <rect x="672" y="104" width="168" height="232" rx="18" fill="#eadfd2"/>
+  <rect x="864" y="104" width="168" height="232" rx="18" fill="#f7f1e8"/>
+  <rect x="1056" y="104" width="120" height="232" rx="18" fill="#eadfd2"/>
+  <rect x="96" y="370" width="1080" height="146" rx="22" fill="#f7f1e8"/>
+  <text x="96" y="596" fill="#f7f1e8" font-family="JetBrains Mono, monospace" font-size="54" font-weight="700">TAROT GENERATION GRID</text>
+  <text x="96" y="636" fill="#d6c7b3" font-family="JetBrains Mono, monospace" font-size="24">CARD FAMILIES / GRID COMPARISON / BATCH REVIEW</text>
+</svg>
