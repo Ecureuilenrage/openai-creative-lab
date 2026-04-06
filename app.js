@@ -77,22 +77,6 @@ function statusMarkup(status, tag, lang) {
 
 // ── Render functions ────────────────────────────────────
 
-function renderOverview(lang) {
-  const container = document.querySelector("#overview-grid");
-  if (!container) return;
-
-  container.innerHTML = content.homepage.overview.items
-    .map(
-      (item) => `
-        <article class="overview-card reveal">
-          <h3>${escapeHtml(textFor(item.title, lang))}</h3>
-          <p>${escapeHtml(textFor(item.copy, lang))}</p>
-        </article>
-      `,
-    )
-    .join("");
-}
-
 function renderPills(containerSelector, items, pillClass, lang) {
   const container = document.querySelector(containerSelector);
   if (!container) return;
@@ -284,10 +268,17 @@ function applyStaticTranslations(lang) {
   });
 }
 
+function updateArchiveCount(lang) {
+  const el = document.querySelector("#archive-count");
+  if (!el || !content.archive?.items) return;
+  const count = content.archive.items.length;
+  const tpl = textFor(content.homepage?.previews?.archive?.stat, lang) || "";
+  el.textContent = tpl.replace("{count}", count);
+}
+
 // ── Dynamic content ─────────────────────────────────────
 
 function renderDynamicContent(lang) {
-  renderOverview(lang);
   renderPills("#soulborn-worlds", content.soulborn?.worlds, "world-tag", lang);
   renderPills("#tarot-cards", content.tarot?.cards, "card-tag-pill", lang);
   renderMediaGrid("#soulborn-media", [content.soulborn?.sections?.iterations, content.soulborn?.sections?.production].filter(Boolean), lang);
@@ -296,6 +287,7 @@ function renderDynamicContent(lang) {
   renderPlaceholderGrid("#tarot-placeholders", content.tarot?.sections?.placeholders || [], lang);
   renderToolGrid(lang);
   renderArchiveGrid(lang);
+  updateArchiveCount(lang);
   hardenYouTubeEmbeds();
   bindRevealTargets();
 }

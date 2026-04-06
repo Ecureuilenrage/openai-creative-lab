@@ -39,10 +39,12 @@
 
 /* ── Button ── */
 
-.btn {
+.btn,
+.btn:visited {
   border: var(--border-width) solid var(--shadow-color);
   box-shadow: 4px 4px 0 var(--shadow-color);
   background: var(--bg-surface);
+  color: inherit;
   cursor: pointer;
   font-family: var(--font);
   text-decoration: none;

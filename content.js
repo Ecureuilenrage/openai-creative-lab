@@ -92,8 +92,8 @@ const content = {
         en: "OpenAI Creative Lab ─ Final Render",
       },
       title: {
-        fr: "Deux explorations créatives, un journal de recherche honnête.",
-        en: "Two creative explorations, one honest research journal.",
+        fr: "Deux explorations créatives, un journal de mes expérimentations.",
+        en: "Two creative explorations, a journal of my experiments.",
       },
       primaryCta:   { fr: "Entrer dans Soulborn", en: "Enter Soulborn" },
       secondaryCta: { fr: "Entrer dans Tarot",    en: "Enter Tarot" },
@@ -115,7 +115,7 @@ const content = {
           en: "Soulborn - AI-generated animated world",
         },
         copy: {
-          fr: "Voyageur, monolithe, mondes successifs, sept soleils, puis soleil unique. Le trailer reste le c─ur du rendu.",
+          fr: "Voyageur, monolithe, mondes successifs, sept soleils, puis soleil unique. Le trailer reste le cœur du rendu.",
           en: "Traveler, monolith, successive worlds, seven suns, then one sun. The trailer remains the core of the submission.",
         },
         thumbnail: "assets/images/soulborn-thumb.svg",
@@ -128,8 +128,8 @@ const content = {
           en: "Tarot - Interactive AI application",
         },
         copy: {
-          fr: "─0volution de Lapin Interactive, expérimentations vitrail puis pivot vers un deck vidéo minimaliste et une expérience plus lisible.",
-          en: "Evolution of Lapin Interactive, stained-glass experiments, then a pivot toward a minimalist video deck and a clearer interactive experience.",
+          fr: "Évolution de l'expérimentation vitrail puis pivot vers un deck vidéo minimaliste et une expérience plus lisible.",
+          en: "Stained-glass experiments, then a pivot toward a minimalist video deck and a clearer interactive experience.",
         },
         thumbnail: "assets/images/tarot-thumb.svg",
       },
@@ -137,44 +137,14 @@ const content = {
 
     // ──── Intro (below fold ─ ~500 chars) ────────────────────────────────────
     intro: {
-      fr: "Ce site documente deux explorations créatives menées dans le cadre de l'OpenAI Creative Lab. De la génération de mondes impossibles avec Sora à la construction d'une expérience de tarot interactive en partant de zéro, chaque projet a repoussé les limites de ce que l'IA générative peut accomplir. Ce qui suit n'est pas seulement le résultat final ─ c'est le parcours créatif complet. Les itérations, les pivots, les outils et les décisions qui ont façonné chaque projet, du premier concept à la livraison finale.",
-      en: "This site documents two creative explorations conducted during the OpenAI Creative Lab. From generating impossible worlds with Sora to building an interactive tarot experience from scratch, each project pushed the boundaries of what generative AI can achieve. What follows is not just the final results ─ it is the full creative journey. The iterations, the pivots, the tools, and the decisions that shaped each project from first concept to final delivery.",
+      fr: "Ce site retrace mes deux explorations créatives menées dans le cadre de l'OpenAI Creative Lab. De la génération de mondes impossibles avec Sora à la création d'une application de tarot interactive, chaque projet a été un terrain d'expérimentation. Ce que je documente ici n'est pas seulement le résultat final ─ c'est le parcours complet : les itérations, les pivots, les impasses et les décisions qui ont façonné chaque projet.",
+      en: "This site documents my two creative explorations during the OpenAI Creative Lab. From generating impossible worlds with Sora to building an interactive tarot application, each project was a testing ground. What I document here is not just the outcome ─ it's the full journey: the iterations, the pivots, the dead ends, and the decisions that shaped each project.",
     },
 
-    // ──── Overview (cadre éditorial) ──────────────────────────────────────────────
-    overview: {
-      eyebrow: { fr: "Cadre éditorial",               en: "Editorial frame" },
-      title:   { fr: "Ce que cette page doit montrer", en: "What this page needs to show" },
-      items: [
-        {
-          title: { fr: "Commencer par le résultat", en: "Start from the final result" },
-          copy: {
-            fr: "Ouvrir la page sur le trailer Soulborn donne tout de suite l'ambition visuelle, puis le scroll explique comment on y arrive.",
-            en: "Opening the page on the Soulborn trailer gives the visual ambition immediately, then the scroll explains how it was built.",
-          },
-        },
-        {
-          title: { fr: "Assumer le journal de recherche", en: "Lean into the research journal" },
-          copy: {
-            fr: "Le récit ne cache ni la panne créative ni les détours : tests Sora, variations d'images, décisions de montage et pivots assumés.",
-            en: "The story does not hide the creative block or the detours: Sora tests, image variations, editing decisions, and deliberate pivots.",
-          },
-        },
-        {
-          title: { fr: "Montrer deux projets en miroir", en: "Show two mirrored projects" },
-          copy: {
-            fr: "Soulborn porte le trailer cinématographique, Tarot montre l'évolution d'une expérience interactive et la sélection d'une direction plus claire.",
-            en: "Soulborn carries the cinematic trailer, while Tarot shows the evolution of an interactive experience and the selection of a clearer direction.",
-          },
-        },
-        {
-          title: { fr: "Laisser des traces exploitables", en: "Leave usable evidence behind" },
-          copy: {
-            fr: "Les placeholders existent déjà pour les captures restantes, le graphe Obsidian et les dossiers d'archives afin de compléter sans refaire la structure.",
-            en: "Placeholders are already there for the remaining captures, the Obsidian graph, and archive folders so the page can be completed without rebuilding the structure.",
-          },
-        },
-      ],
+    // ──── Contexte Lab ──────────────────────────────────────────────────────────
+    labContext: {
+      fr: "L'OpenAI Creative Lab est un programme de recherche créative en partenariat entre OpenAI et l'Université Paris 8, du 30 janvier au 27 mars 2026. Dirigé par Everardo Reyes et Rosa Cinelli (Paris 8) et Souki Mansoor (OpenAI, Artist Programs & Creative Community Lead).",
+      en: "The OpenAI Creative Lab is a creative research program in partnership between OpenAI and Université Paris 8, from January 30 to March 27, 2026. Directed by Everardo Reyes and Rosa Cinelli (Paris 8) and Souki Mansoor (OpenAI, Artist Programs & Creative Community Lead).",
     },
 
     // ──── Preview cards (sous l'intro) ──────────────────────────────────────────
@@ -186,7 +156,7 @@ const content = {
       },
       archive: {
         title: { fr: "Archives",             en: "Archive" },
-        stat:  { fr: "47 fichiers archivés", en: "47 files archived" },
+        stat:  { fr: "{count} fichiers archivés", en: "{count} files archived" },
         cta:   { fr: "Voir",                 en: "See" },
       },
       about: {
@@ -219,8 +189,8 @@ const content = {
       en: "AI world creation with Sora",
     },
     lead: {
-      fr: "La narration reste honnête : inspiration littéraire, panne de créativité, tests de natures mortes et d'autres capacités de Sora, puis retour vers une scène qui venait directement de la lecture en cours.",
-      en: "The narrative stays honest: literary inspiration, creative block, still-life tests and other Sora capabilities, then a return to a scene directly inspired by the book currently being read.",
+      fr: "L'inspiration vient de Shadow Slave, volume 7 — Le Tombeau d'Ariel. Après une panne créative et des tests explorant les capacités de Sora (natures mortes, ambiances variées), le projet est revenu à cette scène de lecture : un voyageur solitaire traversant des mondes impossibles, accompagné d'un monolithe.",
+      en: "The inspiration comes from Shadow Slave, Volume 7 — The Tomb of Ariel. After a creative block and tests exploring Sora's capabilities (still lifes, varied atmospheres), the project returned to this scene from the book: a lone traveler crossing impossible worlds, accompanied by a monolith.",
     },
 
     // ──── Dashboard (above fold) ──────────────────────────────────────────────────────
@@ -237,16 +207,16 @@ const content = {
 
     // ──── Liste des 14 mondes ────────────────────────────────────────────────────────────
     worlds: [
-      { fr: "─0veil dans les blés",      en: "Awakening in the wheat fields" },
+      { fr: "Éveil dans les blés",      en: "Awakening in the wheat fields" },
       { fr: "Jungle primitive",          en: "Primitive jungle" },
       { fr: "Traversée océanique",       en: "Ocean crossing" },
       { fr: "Ruines et portail",         en: "Ruins and portal" },
-      { fr: "─0preuve du désert",         en: "Desert trial" },
+      { fr: "Épreuve du désert",         en: "Desert trial" },
       { fr: "Archipel suspendu",         en: "Suspended archipelago" },
       { fr: "Médina ancienne",           en: "Ancient medina" },
       { fr: "Monde gelé",               en: "Frozen world" },
       { fr: "Terre brûlée",             en: "Burned earth" },
-      { fr: "Jardin d'─0den",            en: "Garden of Eden" },
+      { fr: "Jardin d'Éden",            en: "Garden of Eden" },
       { fr: "Savane ancestrale",         en: "Ancestral savannah" },
       { fr: "Vallée des fleurs",         en: "Valley of flowers" },
       { fr: "Retour au monde ordinaire", en: "Return to the ordinary world" },
@@ -262,18 +232,22 @@ const content = {
         tag:    { fr: "Axe de récit",           en: "Story frame" },
         title:  { fr: "Angle éditorial retenu", en: "Chosen editorial angle" },
         status: "curated",
+        synopsis: {
+          fr: "Un voyageur solitaire et son monolithe traversent quatorze mondes : champs de blé, jungle, océan, ruines et portail, désert, archipel suspendu, médina, monde gelé, terre brûlée, jardin d'Éden, savane, vallée de fleurs — parfois sous sept soleils, parfois sous un seul — jusqu'au retour au monde ordinaire.",
+          en: "A lone traveler and their monolith cross fourteen worlds: wheat fields, jungle, ocean, ruins and portal, desert, suspended archipelago, medina, frozen world, burned earth, Garden of Eden, savannah, valley of flowers — sometimes under seven suns, sometimes under one — until the return to the ordinary world.",
+        },
         points: [
           {
-            fr: "Partir de l'inspiration littéraire, puis expliquer la panne de créativité et le besoin de tester Sora sur plusieurs terrains avant de trouver la bonne forme.",
-            en: "Start with the literary inspiration, then explain the creative block and the need to test Sora across multiple directions before finding the right form.",
+            fr: "Le projet est né d'une lecture — Shadow Slave — puis a traversé une phase de tests exploratoires avec Sora avant de trouver sa forme définitive.",
+            en: "The project was born from reading Shadow Slave, then went through an exploratory testing phase with Sora before finding its final form.",
           },
           {
-            fr: "Dire clairement que le monde couvert d'eau et les sept soleils posaient un problème visuel difficile parce que ces combinaisons existent peu dans les références vues par les modèles.",
-            en: "Say clearly that a water-filled world with seven suns was visually difficult because those combinations barely exist in the references seen by the models.",
+            fr: "Certaines scènes (monde d'eau, sept soleils) posaient un vrai défi visuel : ces combinaisons existent peu dans les références connues des modèles.",
+            en: "Some scenes (water world, seven suns) were a real visual challenge: these combinations barely exist in the references known to the models.",
           },
           {
-            fr: "Montrer le pivot comme une décision productive : ajouter un objet ou une présence animée rend la scène plus lisible et plus vivante.",
-            en: "Present the pivot as a productive decision: adding an animated object or presence makes the scene clearer and more alive.",
+            fr: "Le tournant a été d'ajouter une présence animée — le voyageur, le monolithe — rendant chaque monde plus lisible et ancré dans un récit.",
+            en: "The turning point was adding an animated presence — the traveler, the monolith — making each world more readable and grounded in a narrative.",
           },
         ],
       },
@@ -287,14 +261,14 @@ const content = {
           en: "Screen capture of the Sora web app",
         },
         copy: {
-          fr: "ì montrer comme preuve de recherche visuelle : exploration des possibilités, tests d'ambiances, puis recentrage sur le voyageur et le monolithe.",
-          en: "To show as visual research evidence: exploration of possibilities, atmosphere tests, then a refocus on the traveler and the monolith.",
+          fr: "Avant d'arriver au trailer final, des dizaines de générations ont été testées dans la Sora web app : variations d'ambiance, essais de cadrages, exploration de styles visuels. Le processus a fini par se recentrer sur le voyageur et le monolithe comme fil conducteur.",
+          en: "Before reaching the final trailer, dozens of generations were tested in the Sora web app: atmosphere variations, framing experiments, visual style exploration. The process eventually refocused on the traveler and the monolith as a narrative thread.",
         },
         status: "available",
         media: {
           embed: "https://www.youtube.com/embed/8qwdrzuAX5A?si=B_bdb8q3cRLYIu0g",
           href:  "https://youtu.be/mSoq4g7SNvQ",
-          note:  "YouTube ─ mSoq4g7SNvQ",
+          note:  "YouTube ─ embed: génération (8qwdrzuAX5A) / lien: itérations (mSoq4g7SNvQ)",
         },
         placeholders: [
           {
@@ -391,10 +365,24 @@ const content = {
         tag:   { fr: "Trailer final", en: "Final trailer" },
         title: { fr: "V1 trailer Soulborn", en: "V1 Soulborn trailer" },
         copy: {
-          fr: "Ouverture sur le résultat final actuel avant de revenir au making-of, aux itérations d'images et au montage.",
-          en: "The page opens on the current final result before returning to the making-of, image iterations, and editing process.",
+          fr: "Le trailer rassemble les quatorze mondes en une traversée continue : chaque scène a été générée avec Sora, assemblée dans CapCut et accompagnée d'une bande-son composée via Suno. Le voyageur et le monolithe servent de fil conducteur visuel d'un monde à l'autre.",
+          en: "The trailer brings together the fourteen worlds in a continuous crossing: each scene was generated with Sora, assembled in CapCut, and accompanied by a soundtrack composed via Suno. The traveler and the monolith serve as a visual thread from one world to the next.",
         },
         status: "available",
+      },
+
+      // 6. Conclusion & Leçons
+      conclusion: {
+        heading: { fr: "Conclusion", en: "Conclusion" },
+        tag: { fr: "Leçon", en: "Lesson" },
+        title: {
+          fr: "Ce que Soulborn m'a appris",
+          en: "What Soulborn taught me",
+        },
+        copy: {
+          fr: "L'un des apprentissages clés a été l'intérêt de générer plusieurs vidéos à partir d'images similaires mais légèrement différentes. En variant les angles, les détails ou la lumière d'une même scène, on obtient des résultats plus riches et plus nuancés. La pipeline NanoBanana a permis d'automatiser cette logique : modifier les images itérées par lot pour y ajouter systématiquement le voyageur et le monolithe, puis générer les vidéos à partir de ces variantes.",
+          en: "One of the key takeaways was the value of generating multiple videos from similar but slightly different images. By varying angles, details, or lighting of the same scene, the results become richer and more nuanced. The NanoBanana pipeline automated this approach: batch-editing iterated images to systematically add the traveler and the monolith, then generating videos from those variants.",
+        },
       },
     },
   },
@@ -413,16 +401,16 @@ const content = {
     },
     eyebrow: { fr: "Tarot", en: "Tarot" },
     title: {
-      fr: "Lapin Interactive : de l'expérimentation vitrail au deck minimaliste",
-      en: "Lapin Interactive: from stained-glass experiments to a minimalist deck",
+      fr: "De l'expérimentation vitrail au deck minimaliste",
+      en: "From stained-glass experiments to a minimalist deck",
     },
     subtitle: {
       fr: "Application IA interactive",
       en: "Interactive AI application",
     },
     lead: {
-      fr: "Le chapitre Tarot montre moins un seul climax final qu'une évolution de direction : une série d'essais visuels, un recul sur ce qui marchait vraiment, puis un deck vidéo plus cohérent pour l'expérience interactive.",
-      en: "The Tarot chapter shows less of a single final climax and more of a directional evolution: a series of visual tests, a step back on what truly worked, then a more coherent video deck for the interactive experience.",
+      fr: "Le projet Tarot est une application web interactive de tirage de cartes, disponible sur tarot.exoniq.io. L'utilisateur pose une question, choisit un deck (vitrail ou minimaliste) et un tirage (1 ou 3 cartes), puis découvre ses cartes à travers une animation de distribution et de retournement. Chaque lecture est interprétée par l'IA, accompagnée d'une image générée selon le style du deck choisi.",
+      en: "The Tarot project is an interactive card-reading web application, available at tarot.exoniq.io. The user asks a question, chooses a deck (stained-glass or minimalist) and a spread (1 or 3 cards), then discovers their cards through a dealing and flipping animation. Each reading is interpreted by AI, accompanied by an image generated in the chosen deck's style.",
     },
 
     // ──── Dashboard (above fold) ──────────────────────────────────────────────────────
@@ -448,16 +436,16 @@ const content = {
       exploration: {
         heading: { fr: "Exploration Visuelle", en: "Visual Exploration" },
         introCopy: {
-          fr: "L'arc narratif choisi pour ce projet est de montrer l'évolution de Lapin Interactive comme processus créatif — plutôt que de présenter une simple galerie de cartes de tarot finies. Chaque section ci-dessous retrace une étape clé de ce parcours.",
-          en: "The chosen narrative arc for this project is to show the evolution of Lapin Interactive as a creative process — rather than presenting a simple gallery of finished tarot cards. Each section below traces a key stage of that journey.",
+          fr: "Ce chapitre retrace l'évolution du projet Tarot comme processus créatif — plutôt qu'une simple galerie de cartes finies. Chaque section ci-dessous correspond à une étape clé de ce parcours.",
+          en: "This chapter traces the evolution of the Tarot project as a creative process — rather than a simple gallery of finished cards. Each section below corresponds to a key stage of that journey.",
         },
         tag:    { fr: "Cadre du process", en: "Process frame" },
         title:  { fr: "Arc narratif retenu", en: "Chosen narrative arc" },
         status: "curated",
         points: [
           {
-            fr: "Montrer l'évolution de Lapin Interactive plutôt qu'un simple catalogue de cartes.",
-            en: "Show the evolution of Lapin Interactive rather than a simple gallery of cards.",
+            fr: "Suivre l'évolution du projet plutôt qu'un simple catalogue de cartes.",
+            en: "Follow the project's evolution rather than a simple gallery of cards.",
           },
           {
             fr: "Expliquer que les premières tentatives vidéo en vitrail ont été conservées comme images dans le projet, mais pas comme direction finale pour les clips.",
@@ -485,8 +473,8 @@ const content = {
       bulkGeneration: {
         heading: { fr: "Génération en Lot", en: "Bulk Generation" },
         copy: {
-          fr: "La variation contrôlée était essentielle pour produire un deck complet de 78 cartes. Le pipeline de génération en lot combinait l'ingénierie de prompts avec une itération systématique — chaque passe affinant le cadrage, la cohérence et la lisibilité sur l'ensemble.",
-          en: "Controlled variation was essential to producing a full 78-card deck. The bulk generation pipeline combined prompt engineering with systematic iteration — each pass refining framing, coherence, and readability across the entire set.",
+          fr: "La variation contrôlée était essentielle pour produire les 22 arcanes majeurs. Le pipeline de génération en lot combinait l'ingénierie de prompts avec une itération systématique — chaque passe affinant le cadrage, la cohérence et la lisibilité sur l'ensemble.",
+          en: "Controlled variation was essential to producing the 22 major arcana. The bulk generation pipeline combined prompt engineering with systematic iteration — each pass refining framing, coherence, and readability across the entire set.",
         },
         media: [
           {
@@ -496,7 +484,7 @@ const content = {
               en: "Screen capture of the first bulk iterations",
             },
             copy: {
-              fr: "ì utiliser pour montrer la logique de variation contrôlée autour des cartes, sans transformer la page en archive exhaustive.",
+              fr: "À utiliser pour montrer la logique de variation contrôlée autour des cartes, sans transformer la page en archive exhaustive.",
               en: "Use this to show the logic of controlled variation around the cards, without turning the page into an exhaustive archive.",
             },
             src:    "int-bulk-iteration 1.mp4",
@@ -520,26 +508,13 @@ const content = {
         ],
       },
 
-      // 3. Mini-exemples
-      samples: {
-        tag: { fr: "Mini-exemples", en: "Mini examples" },
-        title: {
-          fr: "Mini-exemples répartis sur plusieurs cartes",
-          en: "Mini examples spread across several cards",
-        },
-        copy: {
-          fr: "La page est pensée pour montrer plusieurs points du projet plutôt qu'un seul bloc massif : cartes, prompts, évolution de l'interface, bulk iterations et captures d'outils.",
-          en: "The page is designed to show multiple points of the project instead of one massive block: cards, prompts, interface evolution, bulk iterations, and tool captures.",
-        },
-      },
-
-      // 3b. Interactive App
+      // 3. Interactive App
       app: {
         heading: { fr: "Application Interactive", en: "Interactive App" },
         tag: { fr: "Application Interactive", en: "Interactive App" },
         copy: {
-          fr: "La construction de l'expérience tarot interactive a évolué à travers plusieurs versions — des premiers prototypes dans VS Code à l'application web finalisée. Chaque itération a affiné la mécanique de tirage, les animations de révélation des cartes et la logique de lecture pour créer une expérience cohérente, proche d'un rituel.",
-          en: "Building the interactive tarot experience evolved across multiple versions — from early prototypes inside VS Code to the polished web application. Each iteration refined the draw mechanic, card reveal animations, and reading logic to create a cohesive ritual-like experience.",
+          fr: "L'application a traversé plusieurs versions avant d'arriver au résultat actuel. Le parcours utilisateur : une zone de texte pour poser sa question (avec trois suggestions pré-écrites), un écran de configuration pour choisir le deck (vitrail ou minimaliste) et le nombre de cartes (1 ou 3), une animation où le deck pulse puis distribue les cartes face cachée, un clic pour retourner chaque carte en vidéo (endroit ou envers), et enfin une page de résultats avec la lecture IA, une synthèse et une image générée selon les cartes tirées et le style du deck.",
+          en: "The app went through several versions before reaching its current form. The user journey: a text box to ask a question (with three pre-written suggestions), a configuration screen to choose the deck (stained-glass or minimalist) and card count (1 or 3), an animation where the deck pulses then deals cards face down, a click to flip each card as a video (upright or reversed), and finally a results page with the AI reading, a synthesis, and an image generated based on the drawn cards and deck style.",
         },
       },
 
@@ -548,25 +523,39 @@ const content = {
         heading: { fr: "Expérience Finale", en: "Final Experience" },
         tag: { fr: "Expérience finale", en: "Final experience" },
         bodyCopy: {
-          fr: "Des expérimentations vitrail à un deck minimaliste de 78 cartes, des prototypes VS Code à une expérience de tirage en direct — le projet Tarot retrace un parcours créatif complet à travers le design et le développement assistés par l'IA.",
-          en: "From stained-glass experiments to a minimalist 78-card deck, from VS Code prototypes to a live ritual-like draw experience — the Tarot project traces a complete creative journey through AI-assisted design and development.",
+          fr: "Des expérimentations vitrail à un deck minimaliste de 22 arcanes majeurs, l'application traverse plusieurs versions pour aboutir à l'expérience de tirage disponible sur tarot.exoniq.io. Deux decks (vitrail et minimaliste), des animations de distribution et retournement, et une lecture interprétée par l'IA.",
+          en: "From stained-glass experiments to a minimalist 22 major arcana deck, the app went through several versions to reach the reading experience available at tarot.exoniq.io. Two decks (stained-glass and minimalist), dealing and flipping animations, and an AI-interpreted reading.",
         },
         title: {
-          fr: "Vidéo ou capture finale du tarot à ajouter",
-          en: "Final tarot video or capture to add",
+          fr: "Démo vidéo de l'expérience de tirage",
+          en: "Demo video of the reading experience",
         },
         copy: {
-          fr: "Emplacement dédié pour la vidéo finale de l'expérience de tirage, ou pour une capture d'écran naviguée de la version retenue.",
-          en: "Dedicated slot for the final draw experience video, or for a navigated screen capture of the selected version.",
+          fr: "Une démo vidéo de l'expérience complète est en cours de préparation.",
+          en: "A demo video of the full experience is being prepared.",
         },
         status: "placeholder",
         placeholder: {
-          fr: "Placeholder ─ final tarot video / experience",
-          en: "Placeholder ─ final tarot video / experience",
+          fr: "Placeholder ─ démo vidéo tarot à venir",
+          en: "Placeholder ─ tarot demo video coming soon",
         },
       },
 
-      // 5. Placeholders restants
+      // 5. Conclusion & Leçons
+      conclusion: {
+        heading: { fr: "Conclusion", en: "Conclusion" },
+        tag: { fr: "Leçon", en: "Lesson" },
+        title: {
+          fr: "Ce que le projet Tarot m'a appris",
+          en: "What the Tarot project taught me",
+        },
+        copy: {
+          fr: "Travailler à partir d'images de référence s'est avéré bien plus efficace pour maintenir une cohérence visuelle à grande échelle, puis itérer sur Sora. Le volume de travail a été considérable : entre 40 et 150 générations pour chacun des 22 arcanes majeurs. Certaines cartes ont posé des problèmes inattendus — Le Pendu en particulier, dont l'imagerie du « hanged man » déclenchait systématiquement les filtres de modération de contenu.",
+          en: "Working from reference images proved far more effective for maintaining visual coherence at scale, then iterating on Sora. The volume of work was substantial: between 40 and 150 generations for each of the 22 major arcana. Some cards posed unexpected challenges — The Hanged Man in particular, whose imagery systematically triggered content moderation filters.",
+        },
+      },
+
+      // 6. Placeholders restants
       placeholders: [
         {
           tag:   { fr: "Prompts", en: "Prompts" },
@@ -584,48 +573,18 @@ const content = {
           },
         },
         {
-          tag:   { fr: "Lapin Interactive", en: "Lapin Interactive" },
-          title: {
-            fr: "─0volution de l'app interactive dans VS Code",
-            en: "Evolution of the interactive app inside VS Code",
-          },
-          copy: {
-            fr: "Emplacement pour les captures des versions précédentes, afin de montrer la progression de l'interface et non seulement les images finales.",
-            en: "Slot for captures of earlier versions, so the page shows the interface progression and not only the final images.",
-          },
-          art: {
-            fr: "Placeholder ─ VS Code app versions",
-            en: "Placeholder ─ VS Code app versions",
-          },
-        },
-        {
           tag:   { fr: "Vitraux", en: "Stained glass" },
           title: {
-            fr: "Tentatives vidéo vitrail gardées comme images",
-            en: "Stained-glass video attempts kept as still images",
+            fr: "Vidéos vitrail ratées — La Force et autres",
+            en: "Failed stained-glass videos — Strength and others",
           },
           copy: {
-            fr: "Cette section doit expliquer que certaines pistes ont été conservées dans le projet, mais relues comme banque d'images plutôt que comme direction finale.",
-            en: "This section should explain that some directions were kept inside the project, but re-read as an image bank rather than the final video direction.",
+            fr: "Certaines tentatives de vidéo en style vitrail ont été conservées comme archives. La Force, notamment, illustre les limites du style orné en animation : riche visuellement mais trop lourd pour un deck cohérent.",
+            en: "Some stained-glass style video attempts were kept as archives. Strength, in particular, illustrates the limits of the ornate style in animation: visually rich but too heavy for a coherent deck.",
           },
           art: {
-            fr: "Placeholder ─ stained-glass image attempts",
-            en: "Placeholder ─ stained-glass image attempts",
-          },
-        },
-        {
-          tag:   { fr: "Int Bulk Generation", en: "Int Bulk Generation" },
-          title: {
-            fr: "Captures supplémentaires de génération en lot",
-            en: "Additional bulk generation captures",
-          },
-          copy: {
-            fr: "Zone prévue pour compléter les mini-exemples carte par carte sans noyer le lecteur sous trop d'assets.",
-            en: "Planned area for adding card-by-card mini examples without drowning the reader in too many assets.",
-          },
-          art: {
-            fr: "Placeholder ─ extra bulk generation screenshots",
-            en: "Placeholder ─ extra bulk generation screenshots",
+            fr: "Placeholder ─ vidéos vitrail ratées",
+            en: "Placeholder ─ failed stained-glass videos",
           },
         },
       ],
@@ -677,68 +636,33 @@ const content = {
         tag:   { fr: "Vidéo", en: "Video" },
         title: { fr: "Sora Web App", en: "Sora Web App" },
         copy: {
-          fr: "Outil central pour tester des ambiances, des mondes et des hypothèses de mise en scène avant la sélection finale.",
-          en: "Central tool for testing atmospheres, worlds, and staging hypotheses before the final selection.",
+          fr: "Application sur mesure construite pour pallier l'absence d'accès à l'interface web de Sora 2. Elle centralise la rédaction de prompts, la génération vidéo, le suivi des itérations et l'organisation des résultats en un seul espace.",
+          en: "Custom-built application created to work around the lack of access to Sora 2's web interface. It centralizes prompt writing, video generation, iteration tracking, and result organization in one place.",
         },
         fields: {
           role: {
-            fr: "Explorer des scènes cinématographiques et comparer plusieurs directions visuelles.",
-            en: "Explore cinematic scenes and compare multiple visual directions.",
+            fr: "Générer des vidéos à partir de prompts textuels, organiser les générations par sessions et tags, et piloter le processus créatif grâce à un journal et une roadmap intégrés.",
+            en: "Generate videos from text prompts, organize generations by sessions and tags, and steer the creative process with a built-in journal and roadmap.",
           },
           input: {
-            fr: "Prompts, reformulations, références de monde, voyageur, monolithe, soleils.",
-            en: "Prompts, reframings, world references, traveler, monolith, suns.",
+            fr: "Prompts textuels, prévisualisations d'images via l'API ImageGen d'OpenAI, notes de journal par session et tags personnalisés.",
+            en: "Text prompts, image previews via OpenAI's ImageGen API, per-session journal notes, and custom tags.",
           },
           output: {
-            fr: "Prévisualisations, clips candidats et matière de démonstration.",
-            en: "Previews, candidate clips, and demonstration material.",
+            fr: "Clips vidéo générés avec cartes de métadonnées JSON, galeries filtrables par session, jour ou tag, et trois modes de réutilisation : variation, remix et continuation frame par frame.",
+            en: "Generated video clips with JSON metadata cards, galleries filterable by session, day, or tag, and three reuse modes: variation, remix, and frame-by-frame continuation.",
           },
           why: {
-            fr: "Le moyen le plus rapide pour tester un monde impossible et son langage de caméra.",
-            en: "The fastest way to test an impossible world and its camera language.",
+            fr: "La boucle variation / remix / continuation permet d'itérer très vite sans repartir de zéro. La continuation enchaîne les vidéos en prenant la dernière frame comme point de départ de la suivante.",
+            en: "The variation / remix / continuation loop enables rapid iteration without starting from scratch. Continuation chains videos by using the last frame as the starting point of the next one.",
           },
           limits: {
-            fr: "Les mondes rares restent instables ; la cohérence du mouvement varie.",
-            en: "Rare worlds remain unstable; motion coherence varies.",
+            fr: "Le mode structuré (templates de prompts pré-rédigés) s'est révélé peu flexible en pratique. La prédiction de résultat reste approximative.",
+            en: "Structured mode (pre-written prompt templates) proved inflexible in practice. Result prediction remains approximate.",
           },
           result: {
-            fr: "Base directe du trailer Soulborn et des captures de process.",
-            en: "Direct basis for the Soulborn trailer and process captures.",
-          },
-        },
-      },
-      {
-        status: "available",
-        tag:   { fr: "Variations", en: "Variations" },
-        title: { fr: "Int Bulk Iterations", en: "Int Bulk Iterations" },
-        copy: {
-          fr: "Permet de générer rapidement des familles de variantes pour comparer des micro-différences utiles.",
-          en: "Lets you generate families of variants quickly in order to compare useful micro-differences.",
-        },
-        fields: {
-          role: {
-            fr: "Multiplier les itérations sans repartir de zéro à chaque fois.",
-            en: "Multiply iterations without restarting from scratch every time.",
-          },
-          input: {
-            fr: "Prompt ou base existante, paramètres d'itération, direction visuelle ciblée.",
-            en: "Prompt or existing base, iteration parameters, targeted visual direction.",
-          },
-          output: {
-            fr: "Séries de variantes vidéo ou image à trier.",
-            en: "Series of video or image variants to sort through.",
-          },
-          why: {
-            fr: "Idéal pour montrer le process sans noyer la page dans trop de médias finaux.",
-            en: "Ideal for showing process without drowning the page in too many final assets.",
-          },
-          limits: {
-            fr: "Il faut ensuite éditorialiser et sélectionner, sinon tout se ressemble.",
-            en: "It still needs editorial selection, otherwise everything starts to look alike.",
-          },
-          result: {
-            fr: "Mini-exemples concrets pour Tarot et preuve d'itération contrôlée.",
-            en: "Concrete mini examples for Tarot and proof of controlled iteration.",
+            fr: "Toutes les vidéos sont stockées localement avec leurs métadonnées JSON, ce qui permet de retracer chaque étape du processus créatif et de filtrer les résultats par notation (à garder, bon, portfolio).",
+            en: "All videos are stored locally with their JSON metadata, enabling every step of the creative process to be traced and results to be filtered by rating (keep, good, portfolio).",
           },
         },
       },
@@ -747,34 +671,77 @@ const content = {
         tag:   { fr: "Génération", en: "Generation" },
         title: { fr: "Int Bulk Generation", en: "Int Bulk Generation" },
         copy: {
-          fr: "Section pensée pour montrer comment une même intention produit plusieurs images proches avec de petites variations lisibles.",
-          en: "Designed to show how one intention can produce several close images with readable small variations.",
+          fr: "Outil de génération en lot qui produit des séries d'images à partir d'un même prompt. Il rend visible le passage d'une intention unique à un éventail de variantes proches, chacune avec de petites différences exploitables pour affiner la direction artistique.",
+          en: "Batch generation tool that produces image series from a single prompt. It makes visible the path from one intention to a range of close variants, each with small exploitable differences used to refine the artistic direction.",
         },
         fields: {
           role: {
-            fr: "Produire des lots d'images à partir d'une direction donnée.",
-            en: "Produce image batches from a chosen direction.",
+            fr: "Produire des lots d'images à partir d'une direction donnée, puis les comparer côte à côte pour identifier les micro-variations les plus pertinentes avant de passer à l'étape suivante.",
+            en: "Produce image batches from a chosen direction, then compare them side by side to identify the most relevant micro-variations before moving to the next step.",
           },
           input: {
-            fr: "Prompt, références éventuelles et logique de génération en série.",
-            en: "Prompt, optional references, and a batch-generation logic.",
+            fr: "Prompt structuré, références visuelles optionnelles, paramètres de génération en série et direction artistique ciblée pour chaque lot.",
+            en: "Structured prompt, optional visual references, batch generation parameters, and a targeted artistic direction for each lot.",
           },
           output: {
-            fr: "Grilles de variantes à documenter par captures d'écran.",
-            en: "Variant grids to document through screenshots.",
+            fr: "Grilles de variantes documentées par captures d'écran, organisées en séries comparables pour montrer l'étendue des résultats à partir d'une seule idée.",
+            en: "Variant grids documented through screenshots, organized into comparable series to show the range of results from a single idea.",
           },
           why: {
-            fr: "Très parlant pour expliquer le passage d'une idée à une sélection.",
-            en: "Very effective for explaining the path from one idea to a selection.",
+            fr: "Très parlant pour expliquer le passage d'une idée à une sélection. La grille visuelle permet au jury de comprendre immédiatement la logique de choix derrière chaque direction retenue.",
+            en: "Very effective for explaining the path from one idea to a selection. The visual grid lets the jury immediately understand the selection logic behind each chosen direction.",
           },
           limits: {
-            fr: "Sans tri, la masse devient vite opaque pour un jury.",
-            en: "Without selection, the volume quickly becomes opaque for a jury.",
+            fr: "Sans tri éditorial, la masse de variantes devient vite opaque. Il faut un travail de curation en aval pour que la quantité reste lisible et démonstrative.",
+            en: "Without editorial selection, the sheer volume of variants quickly becomes opaque. Downstream curation work is needed to keep the quantity readable and demonstrative.",
           },
           result: {
-            fr: "Placeholder déjà prévu pour les captures Soulborn et Tarot.",
-            en: "Placeholder already planned for both Soulborn and Tarot captures.",
+            fr: "Séries de variantes utilisées comme preuve de recherche visuelle, avec des captures qui documentent chaque passe de génération et les choix retenus.",
+            en: "Variant series used as visual research evidence, with captures documenting each generation pass and the choices that were kept.",
           },
+        },
+        media: {
+          embed: "https://www.youtube.com/embed/JEqVGvyrjsI?si=LwN3oP0E4cvZCkM9",
+          note:  "Int Bulk Iterations v1",
+        },
+      },
+      {
+        status: "available",
+        tag:   { fr: "Variations", en: "Variations" },
+        title: { fr: "Int Bulk Iterations", en: "Int Bulk Iterations" },
+        copy: {
+          fr: "Outil d'itération contrôlée qui reprend une base existante pour en dériver des familles de variantes. Chaque passe affine le cadrage, la cohérence et la lisibilité sans repartir de zéro, ce qui accélère la convergence vers un résultat exploitable.",
+          en: "Controlled iteration tool that takes an existing base and derives families of variants from it. Each pass refines framing, coherence, and readability without starting from scratch, accelerating convergence toward a usable result.",
+        },
+        fields: {
+          role: {
+            fr: "Multiplier les itérations à partir d'une génération précédente, en ajustant progressivement les paramètres pour explorer des directions proches sans perdre la cohérence de départ.",
+            en: "Multiply iterations from a previous generation, progressively adjusting parameters to explore nearby directions without losing the initial coherence.",
+          },
+          input: {
+            fr: "Prompt ou base existante issue d'une génération antérieure, paramètres d'itération ajustés et direction visuelle ciblée pour chaque nouvelle passe.",
+            en: "Prompt or existing base from a prior generation, adjusted iteration parameters, and a targeted visual direction for each new pass.",
+          },
+          output: {
+            fr: "Séries de variantes vidéo ou image classées par passe, permettant de visualiser l'évolution des choix d'une version à l'autre plutôt que leur simple volume.",
+            en: "Series of video or image variants sorted by pass, making it possible to visualize the evolution of choices from one version to the next rather than just their volume.",
+          },
+          why: {
+            fr: "Idéal pour montrer le processus d'affinement sans noyer la page dans trop de médias. La comparaison entre passes rend la progression lisible et démonstrative.",
+            en: "Ideal for showing the refinement process without drowning the page in too many assets. Comparing passes makes the progression readable and demonstrative.",
+          },
+          limits: {
+            fr: "Il faut un travail éditorial entre chaque passe pour sélectionner les bonnes variantes, sinon les résultats finissent par se ressembler et la progression devient invisible.",
+            en: "Editorial work is needed between each pass to select the right variants, otherwise results end up looking alike and the progression becomes invisible.",
+          },
+          result: {
+            fr: "Deux passes documentées (v1 et v2) qui montrent concrètement l'évolution des choix : meilleurs cadrages, meilleure cohérence, meilleure lisibilité d'une itération à l'autre.",
+            en: "Two documented passes (v1 and v2) that concretely show the evolution of choices: better framing, better coherence, and better readability from one iteration to the next.",
+          },
+        },
+        media: {
+          embed: "https://www.youtube.com/embed/J8OFkF3Ft-g?si=NMat_FWL-uT77lIl",
+          note:  "Int Bulk Iterations v2",
         },
       },
       {
@@ -817,68 +784,56 @@ const content = {
         tag:   { fr: "Montage", en: "Editing" },
         title: { fr: "CapCut", en: "CapCut" },
         copy: {
-          fr: "Le montage transforme des sorties disparates en un trailer lisible, rythmé et montrable.",
-          en: "Editing turns disparate outputs into a readable, paced, presentable trailer.",
+          fr: "Logiciel de montage vidéo gratuit qui a permis d'assembler le trailer Soulborn. Interface intuitive et suffisamment puissante pour du montage créatif, même si la version gratuite atteint vite ses limites sur les exports et effets avancés.",
+          en: "Free video editing software used to assemble the Soulborn trailer. Intuitive interface and powerful enough for creative editing, though the free tier quickly hits its limits on exports and advanced effects.",
         },
         fields: {
           role: {
-            fr: "Assembler, couper, rythmer et hiérarchiser la matière visuelle.",
-            en: "Assemble, trim, pace, and prioritize the visual material.",
+            fr: "Monter les clips Sora retenus en un trailer cohérent avec rythme, transitions et musique Suno synchronisée.",
+            en: "Edit the selected Sora clips into a coherent trailer with pacing, transitions, and synchronized Suno music.",
           },
           input: {
-            fr: "Clips retenus, musique Suno, logique de trailer, transitions.",
-            en: "Selected clips, Suno music, trailer logic, transitions.",
+            fr: "Clips vidéo générés par Sora, musique Suno, logique narrative du trailer.",
+            en: "Video clips generated by Sora, Suno music, trailer narrative logic.",
           },
           output: {
-            fr: "Version finale du trailer et capture écran du montage.",
-            en: "Final trailer version and a screen recording of the edit.",
+            fr: "Trailer Soulborn V1 et capture écran du processus de montage.",
+            en: "Soulborn trailer V1 and a screen recording of the editing process.",
           },
           why: {
-            fr: "C'est là que le projet devient narration plutôt qu'accumulation.",
-            en: "This is where the project becomes narrative rather than accumulation.",
+            fr: "Bon compromis gratuit pour du montage créatif rapide. C'est l'étape où les clips bruts deviennent une narration visuelle.",
+            en: "Good free option for quick creative editing. This is the step where raw clips become a visual narrative.",
           },
           limits: {
-            fr: "Le montage ne sauve pas une matière confuse ; il révèle les vrais choix.",
-            en: "Editing does not save confused material; it reveals the real choices.",
-          },
-          result: {
-            fr: "Trailer Soulborn V1 et capture CapCut déjà branchés sur la page.",
-            en: "Soulborn trailer V1 and the CapCut capture are already wired into the page.",
+            fr: "CapCut Premium est vite nécessaire pour débloquer certains exports et effets. La version gratuite reste suffisante pour un premier trailer.",
+            en: "CapCut Premium quickly becomes necessary to unlock certain exports and effects. The free version remains sufficient for a first trailer.",
           },
         },
       },
       {
-        status: "curated",
-        tag:   { fr: "App", en: "App" },
-        title: { fr: "VS Code / Lapin Interactive", en: "VS Code / Lapin Interactive" },
+        status: "available",
+        tag:   { fr: "IDE", en: "IDE" },
+        title: { fr: "VS Code", en: "VS Code" },
         copy: {
-          fr: "Support du développement de l'expérience tarot, avec plusieurs versions à comparer pour montrer l'évolution.",
-          en: "Workspace for developing the tarot experience, with several versions to compare in order to show evolution.",
+          fr: "IDE principal utilisé pour développer toutes les applications du projet : OraApp, Int Bulk Generation, Int Bulk Iterations, NanoBanana, l'expérience tarot interactive et ce site de rendu.",
+          en: "Main IDE used to develop every application in the project: OraApp, Int Bulk Generation, Int Bulk Iterations, NanoBanana, the interactive tarot experience, and this render site.",
         },
         fields: {
           role: {
-            fr: "Construire et faire évoluer l'expérience interactive du tarot.",
-            en: "Build and evolve the interactive tarot experience.",
+            fr: "Environnement de développement central pour l'écriture, le debug et le versioning de tout le code produit.",
+            en: "Central development environment for writing, debugging, and versioning all the code produced.",
           },
           input: {
-            fr: "Prompting, décisions UX, versions précédentes, logique de tirage.",
-            en: "Prompting, UX decisions, previous versions, draw logic.",
+            fr: "Code source, extensions, terminaux intégrés, assistants IA (Claude Code, Codex).",
+            en: "Source code, extensions, integrated terminals, AI assistants (Claude Code, Codex).",
           },
           output: {
-            fr: "App interactive, captures VS Code et historique de progression.",
-            en: "Interactive app, VS Code captures, and a visible progression history.",
+            fr: "Applications fonctionnelles, pipelines, sites web et historique Git de chaque projet.",
+            en: "Working applications, pipelines, websites, and Git history for each project.",
           },
           why: {
-            fr: "Montre que le projet n'est pas seulement une galerie d'images.",
-            en: "Shows that the project is not only an image gallery.",
-          },
-          limits: {
-            fr: "Il faut choisir quelques jalons lisibles, pas tout montrer.",
-            en: "You need a few readable milestones, not everything.",
-          },
-          result: {
-            fr: "Section placeholder prévue pour les versions précédentes de Lapin Interactive.",
-            en: "Placeholder section planned for earlier Lapin Interactive versions.",
+            fr: "Unifie le workflow : chaque outil custom a été codé, testé et versionné au même endroit.",
+            en: "Unifies the workflow: every custom tool was coded, tested, and versioned in one place.",
           },
         },
       },
@@ -887,33 +842,25 @@ const content = {
         tag:   { fr: "Recherche", en: "Research" },
         title: { fr: "Obsidian", en: "Obsidian" },
         copy: {
-          fr: "Obsidian sert de mémoire de recherche, de journal d'idées et de preuve de profondeur documentaire.",
-          en: "Obsidian acts as a research memory, idea journal, and proof of documentary depth.",
+          fr: "Obsidian sert de mémoire de recherche, de journal d'idées et de preuve de profondeur documentaire. Sur la capture du graphe, la zone en rouge correspond à l'ensemble des idées et pistes de brainstorming — chaque point est une idée que je voulais tenter avec Sora, et je n'ai pas eu le temps de tout explorer.",
+          en: "Obsidian acts as a research memory, idea journal, and proof of documentary depth. On the graph capture, the red zone represents the entire brainstorming area — each node is an idea I wanted to try with Sora, and I didn't have time to explore them all.",
         },
         fields: {
           role: {
-            fr: "Structurer notes, références, pistes et documentation de process.",
-            en: "Structure notes, references, tracks, and process documentation.",
+            fr: "Structurer notes, références, pistes créatives et documentation technique dans un vault interconnecté.",
+            en: "Structure notes, references, creative leads, and technical documentation in an interconnected vault.",
           },
           input: {
-            fr: "Brainstorming, documentation technique, inspirations, liens entre projets.",
-            en: "Brainstorming, technical documentation, inspirations, project links.",
+            fr: "Brainstorming, documentation technique, inspirations, liens entre projets et notes datées par session.",
+            en: "Brainstorming, technical documentation, inspirations, project links, and dated session notes.",
           },
           output: {
-            fr: "Notes datées, graphes, traces de préparation et de pipeline.",
-            en: "Dated notes, graphs, preparation traces, and pipeline notes.",
+            fr: "Notes datées, graphe de connexions entre idées, traces de préparation et documentation pipeline (dont NanoBanana).",
+            en: "Dated notes, connection graph between ideas, preparation traces, and pipeline documentation (including NanoBanana).",
           },
           why: {
-            fr: "Le graphe montre immédiatement l'ampleur de la recherche.",
-            en: "The graph immediately shows the scale of the research.",
-          },
-          limits: {
-            fr: "Il faut ensuite scénariser le contenu pour qu'il soit lisible en rendu.",
-            en: "The content still needs to be staged so it reads clearly in the final render.",
-          },
-          result: {
-            fr: "Capture du graphe à ajouter et note NanoBanana déjà identifiée.",
-            en: "Graph capture still to add, and the NanoBanana note is already identified.",
+            fr: "Le graphe montre immédiatement l'ampleur de la recherche et le nombre de pistes explorées ou laissées de côté.",
+            en: "The graph immediately shows the scale of the research and the number of leads explored or left aside.",
           },
         },
       },
@@ -942,83 +889,59 @@ const content = {
             fr: "Rapide pour ouvrir des options et préciser une voix.",
             en: "Fast for opening options and sharpening a voice.",
           },
-          limits: {
-            fr: "Nécessite une forte sélection pour rester fidèle au projet.",
-            en: "Needs strong selection in order to stay faithful to the project.",
-          },
-          result: {
-            fr: "Présent dans la recette et dans la liste d'outils mentionnés.",
-            en: "Included in the recipe and in the list of mentioned tools.",
-          },
         },
       },
       {
-        status: "curated",
+        status: "available",
         tag:   { fr: "LLM", en: "LLM" },
         title: { fr: "Codex", en: "Codex" },
         copy: {
-          fr: "Utilisé ici pour structurer la page de rendu, synthétiser les éléments du projet et préparer une présentation montrable.",
-          en: "Used here to structure the render page, synthesize project material, and prepare a presentation that can actually be shown.",
+          fr: "Assistant de code agentique d'OpenAI. Les modèles Codex 5.3, et GPT-5.4 sont sortis au fil du Lab et ont permis de construire la majorité des pipelines et applications du projet.",
+          en: "OpenAI's agentic coding assistant. The Codex 5.3, and GPT-5.4 models were released throughout the Lab and enabled building most of the project's pipelines and applications.",
         },
         fields: {
           role: {
-            fr: "Lire les sources, structurer le récit et produire le site HTML/CSS/JS.",
-            en: "Read source material, structure the story, and build the HTML/CSS/JS site.",
+            fr: "Générer, itérer et debugger le code des pipelines, des outils internes et de ce site de rendu.",
+            en: "Generate, iterate on, and debug the code for pipelines, internal tools, and this render site.",
           },
           input: {
-            fr: "Notes, chemins locaux, assets disponibles, décisions éditoriales utilisateur.",
-            en: "Notes, local paths, available assets, and the user's editorial decisions.",
+            fr: "Notes, chemins locaux, assets disponibles, décisions éditoriales et accès aux modèles successifs (o3, o4-mini, GPT-4.1).",
+            en: "Notes, local paths, available assets, editorial decisions, and access to successive models (o3, o4-mini, GPT-4.1).",
           },
           output: {
-            fr: "Page bilingue, placeholders et organisation du rendu final.",
-            en: "Bilingual page, placeholders, and final-render organization.",
+            fr: "Code fonctionnel pour les pipelines, le site bilingue et l'organisation du rendu final.",
+            en: "Working code for pipelines, the bilingual site, and the final render organization.",
           },
           why: {
-            fr: "Permet de transformer un brainstorming diffus en structure concrète.",
-            en: "Helps turn diffuse brainstorming into a concrete structure.",
-          },
-          limits: {
-            fr: "Dépend de la qualité des assets réellement triés et déposés.",
-            en: "Depends on the quality of the assets that are actually sorted and placed.",
-          },
-          result: {
-            fr: "Le site de rendu actuel dans ce dossier.",
-            en: "The current render site in this folder.",
+            fr: "L'accès anticipé aux nouveaux modèles via le Lab a permis d'itérer très vite sur des tâches de code complexes.",
+            en: "Early access to new models through the Lab enabled very fast iteration on complex coding tasks.",
           },
         },
       },
       {
-        status: "curated",
+        status: "available",
         tag:   { fr: "LLM", en: "LLM" },
         title: { fr: "Claude Code", en: "Claude Code" },
         copy: {
-          fr: "Mentionné comme autre assistant utilisé sur le même projet, en particulier côté Vault Obsidian.",
-          en: "Mentioned as another assistant used on the same project, especially around the Obsidian vault.",
+          fr: "Assistant de code agentique d'Anthropic, utilisé en complément sur le même projet — en particulier côté Vault Obsidian et sur ce site de rendu.",
+          en: "Anthropic's agentic coding assistant, used alongside the other tools on this project — especially on the Obsidian vault side and on this render site.",
         },
         fields: {
           role: {
-            fr: "Aider sur certaines branches du projet et la matière documentaire.",
-            en: "Help on some branches of the project and on documentary material.",
+            fr: "Assister sur certaines branches du projet, la matière documentaire et le développement du site.",
+            en: "Assist on specific branches of the project, documentary material, and site development.",
           },
           input: {
-            fr: "Contexte Vault Obsidian, réflexion, organisation documentaire.",
-            en: "Obsidian vault context, reflection, and documentary organization.",
+            fr: "Contexte Vault Obsidian, réflexion, organisation documentaire et code source du site.",
+            en: "Obsidian vault context, reflection, documentary organization, and site source code.",
           },
           output: {
-            fr: "Compléments de documentation et d'itération textuelle.",
-            en: "Documentation complements and textual iteration.",
+            fr: "Compléments de documentation, itération textuelle et code du site de rendu.",
+            en: "Documentation complements, textual iteration, and render site code.",
           },
           why: {
-            fr: "Permet de montrer une écologie d'outils plutôt qu'un outil unique.",
-            en: "Helps show an ecosystem of tools rather than a single tool.",
-          },
-          limits: {
-            fr: "Il faut rester clair sur le rôle exact de chaque assistant.",
-            en: "You still need to stay clear about the exact role of each assistant.",
-          },
-          result: {
-            fr: "ì citer dans la documentation créative et la fiche outils.",
-            en: "To be cited in the creative documentation and the tool sheet.",
+            fr: "Permet de montrer une écologie d'outils et d'assistants plutôt qu'un outil unique.",
+            en: "Shows an ecosystem of tools and assistants rather than reliance on a single one.",
           },
         },
       },
@@ -1069,17 +992,17 @@ const content = {
       en: "Archive — Creative Lab OpenAI",
     },
     metaDescription: {
-      fr: "Matériaux bruts et documentation — prompts, captures, anciennes versions, graphe Obsidian et assets téléchargeables du projet.",
-      en: "Raw materials and documentation - prompts, screenshots, legacy versions, Obsidian research graph, and downloadable project assets.",
+      fr: "Prompts, graphe de recherche Obsidian, dépôts GitHub et fichiers téléchargeables liés aux projets Soulborn et Tarot.",
+      en: "Prompts, Obsidian research graph, GitHub repositories, and downloadable files related to the Soulborn and Tarot projects.",
     },
-    eyebrow: { fr: "Archives & Recherche", en: "Archive & Research" },
+    eyebrow: { fr: "Archives", en: "Archive" },
     title: {
-      fr: "Preuves de recherche, dossiers et emplacements encore à compléter",
-      en: "Research evidence, folders, and slots still to complete",
+      fr: "Archives & Documentation",
+      en: "Archives & Documentation",
     },
     lead: {
-      fr: "Cette dernière partie regroupe le graphe Obsidian, l'archive Drive, le pipeline NanoBanana, et les placeholders déjà posés pour les captures pas encore rangées.",
-      en: "This final section gathers the Obsidian graph, the Drive archive, the NanoBanana pipeline, and the placeholders already created for captures that are not sorted yet.",
+      fr: "Cette section rassemble les prompts, le graphe de recherche Obsidian, les dépôts GitHub et les fichiers téléchargeables liés aux deux projets.",
+      en: "This section gathers prompts, the Obsidian research graph, GitHub repositories, and downloadable files related to both projects.",
     },
 
     items: [
@@ -1102,53 +1025,17 @@ const content = {
         button: { fr: "Ouvrir le Drive", en: "Open Drive" },
       },
       {
-        status: "curated",
-        tag:   { fr: "Pipeline", en: "Pipeline" },
-        title: {
-          fr: "Dossier NanoBanana / bulk-editing",
-          en: "NanoBanana / bulk-editing folder",
-        },
-        copy: {
-          fr: "Le pipeline local Python sert de preuve technique pour le workflow d'édition basé sur références et JSON fusionnés.",
-          en: "The local Python pipeline works as technical evidence for the reference-based editing workflow using merged JSON.",
-        },
-        note: {
-          fr: "C:\\Dev\\PRJET\\nanobanana-projet\\bulk-editing",
-          en: "C:\\Dev\\PRJET\\nanobanana-projet\\bulk-editing",
-        },
-      },
-      {
         status: "available",
         tag:   { fr: "Obsidian", en: "Obsidian" },
         title: {
-          fr: "Capture du graphe Obsidian",
-          en: "Obsidian graph capture",
+          fr: "Graphe de recherche Obsidian",
+          en: "Obsidian research graph",
         },
         copy: {
-          fr: "ì insérer ici comme preuve de profondeur de recherche, de brainstorming et de documentation.",
-          en: "To insert here as proof of research depth, brainstorming, and documentation.",
-        },
-        note: {
-          fr: "Source note clé : C:\\Users\\darkl\\Documents\\important\\obsidian\\Brain\\brain\\2026-03-19.md",
-          en: "Key source note: C:\\Users\\darkl\\Documents\\important\\obsidian\\Brain\\brain\\2026-03-19.md",
+          fr: "Le graphe Obsidian montre les connexions entre idées, les phases de brainstorming et la documentation croisée entre Soulborn et Tarot tout au long du projet.",
+          en: "The Obsidian graph shows the connections between ideas, brainstorming phases, and cross-documentation between Soulborn and Tarot throughout the project.",
         },
         image: "assets/images/obsidian.webp",
-      },
-      {
-        status: "available",
-        tag:   { fr: "Workspace", en: "Workspace" },
-        title: {
-          fr: "Médias locaux déjà branchés",
-          en: "Local media already wired in",
-        },
-        copy: {
-          fr: "Le dossier de rendu contient déjà le trailer Soulborn, la capture CapCut, la capture Sora et deux vidéos d'itérations en lot.",
-          en: "The render folder already contains the Soulborn trailer, the CapCut capture, the Sora capture, and two bulk-iteration videos.",
-        },
-        note: {
-          fr: "Workspace actuel : openai-creative-lab",
-          en: "Current workspace: openai-creative-lab",
-        },
       },
     ],
 
@@ -1178,123 +1065,13 @@ const content = {
             tag: { fr: "Tarot", en: "Tarot" },
             title: { fr: "Prompts ChatGPT + Codex", en: "ChatGPT + Codex Prompts" },
             copy: {
-              fr: "Bloc prévu pour la recette éditoriale : prompts de cartes, ajustements de style et formulations qui ont guidé les itérations du deck minimaliste.",
-              en: "Planned block for the editorial recipe: card prompts, style adjustments, and formulations that guided the iterations of the minimalist deck.",
+              fr: "Les prompts de génération des cartes, ajustements de style et formulations sont archivés au format JSON dans le Drive du projet.",
+              en: "Card generation prompts, style adjustments, and formulations are archived as JSON files in the project's Drive.",
             },
-            placeholder: { fr: "Placeholder · liste de prompts / recette workflow", en: "Placeholder · prompt list / workflow recipe" },
           },
           {
             tag: { fr: "Tarot", en: "Tarot" },
             title: { fr: "Arc Narratif", en: "Narrative Arc" },
-          },
-        ],
-      },
-      screenshots: {
-        title: { fr: "Captures d'écran", en: "Screenshots" },
-        intro: {
-          fr: "Galerie d'itérations — résultats de génération en lot et captures d'expériences Sora montrant la progression des premiers tests aux sélections finales.",
-          en: "Iteration gallery — bulk generation results and Sora experiment captures showing the progression from early tests to curated selections.",
-        },
-        items: [
-          {
-            tag: { fr: "Soulborn", en: "Soulborn" },
-            title: { fr: "Génération en Lot Sora", en: "Sora Bulk Generation" },
-            copy: {
-              fr: "Captures montrant comment la même idée donne plusieurs images proches avec de petites variations utiles — recherche visuelle à travers ambiances, mondes et hypothèses de mise en scène.",
-              en: "Captures showing how the same idea yields many close images with small useful variations — visual research across atmospheres, worlds, and staging hypotheses.",
-            },
-            alt: {
-              fr: "Capture d'archive représentant les variantes Soulborn en génération par lot et les tests d'ambiance",
-              en: "Archive capture representing Soulborn bulk generation variants and atmosphere tests",
-            },
-            placeholder: { fr: "Placeholder · captures de variantes d'images en lot", en: "Placeholder · screenshots of bulk image variants" },
-          },
-          {
-            tag: { fr: "Tarot", en: "Tarot" },
-            title: { fr: "Bulk Iterations v1", en: "Bulk Iterations v1" },
-            copy: {
-              fr: "Capture des premières bulk iterations — variation contrôlée autour des cartes, sans transformer la page en archive exhaustive.",
-              en: "Screen capture of the first bulk iterations — controlled variation around the cards, without turning the page into an exhaustive archive.",
-            },
-            alt: {
-              fr: "Capture d'archive représentant la première passe d'itérations en lot Tarot",
-              en: "Archive capture representing the first Tarot bulk iteration pass",
-            },
-            placeholder: { fr: "Placeholder · captures bulk iteration v1", en: "Placeholder · bulk iteration captures v1" },
-          },
-          {
-            tag: { fr: "Tarot", en: "Tarot" },
-            title: { fr: "Bulk Iterations v2", en: "Bulk Iterations v2" },
-            copy: {
-              fr: "Deuxième passe d'itérations montrant l'évolution des choix : meilleurs cadrages, meilleure cohérence, meilleure lisibilité.",
-              en: "Second iteration pass showing the evolution of choices: better framing, better coherence, and better readability.",
-            },
-            alt: {
-              fr: "Capture d'archive représentant la deuxième passe d'itérations en lot Tarot",
-              en: "Archive capture representing the second Tarot bulk iteration pass",
-            },
-            placeholder: { fr: "Placeholder · captures bulk iteration v2", en: "Placeholder · bulk iteration captures v2" },
-          },
-          {
-            tag: { fr: "Tarot", en: "Tarot" },
-            title: { fr: "Bulk Generation", en: "Bulk Generation" },
-            copy: {
-              fr: "Conçu pour montrer comment une même intention produit plusieurs images proches avec de petites variations lisibles — grilles de variantes à documenter.",
-              en: "Designed to show how one intention can produce several close images with readable small variations — variant grids to document through screenshots.",
-            },
-            alt: {
-              fr: "Capture d'archive représentant les grilles de génération en lot Tarot et les lots de cartes",
-              en: "Archive capture representing Tarot bulk generation grids and card batches",
-            },
-            placeholder: { fr: "Placeholder · captures de grilles de génération en lot", en: "Placeholder · bulk generation grid captures" },
-          },
-        ],
-      },
-      legacy: {
-        title: { fr: "Versions Précédentes", en: "Legacy Versions" },
-        intro: {
-          fr: "Évolution de l'application de tarot Lapin Interactive — des premières expérimentations vitrail au deck minimaliste final, montrant la progression de l'interface à travers les versions.",
-          en: "Evolution of the Lapin Interactive tarot application — from early stained-glass experiments to the final minimalist deck, showing the interface progression across versions.",
-        },
-        items: [
-          {
-            tag: { fr: "v1", en: "v1" },
-            title: { fr: "Tarot v1 — Vitrail", en: "Tarot v1 — Stained Glass" },
-            copy: {
-              fr: "Premières tentatives vidéo vitrail — conservées comme images dans le projet, mais pas comme direction finale pour les clips.",
-              en: "Early stained-glass video attempts — kept as still images inside the project, but not as the final direction for the clips.",
-            },
-            alt: {
-              fr: "Planche d'archive représentant la direction d'interface Tarot v1 vitrail",
-              en: "Archive plate representing the Tarot v1 stained-glass interface direction",
-            },
-            placeholder: { fr: "Placeholder · interface tarot v1 vitrail", en: "Placeholder · tarot v1 stained-glass interface" },
-          },
-          {
-            tag: { fr: "v2", en: "v2" },
-            title: { fr: "Tarot v2 — Itération", en: "Tarot v2 — Iteration" },
-            copy: {
-              fr: "Version intermédiaire montrant la transition vers un langage visuel plus cohérent et des patterns d'interaction simplifiés.",
-              en: "Intermediate version showing the shift toward a more coherent visual language and simplified interaction patterns.",
-            },
-            alt: {
-              fr: "Planche d'archive représentant la direction intermédiaire de l'interface Tarot",
-              en: "Archive plate representing the intermediate Tarot interface direction",
-            },
-            placeholder: { fr: "Placeholder · interface tarot v2 intermédiaire", en: "Placeholder · tarot v2 intermediate interface" },
-          },
-          {
-            tag: { fr: "v3", en: "v3" },
-            title: { fr: "Tarot v3 — Deck Minimaliste", en: "Tarot v3 — Minimalist Deck" },
-            copy: {
-              fr: "Version actuelle — le deck minimaliste choisi pour la lisibilité, la cohérence et l'efficacité dans l'expérience interactive finale.",
-              en: "Current version — the minimalist deck chosen for readability, coherence, and efficiency in the final interactive experience.",
-            },
-            alt: {
-              fr: "Planche d'archive représentant l'interface Tarot minimaliste actuelle",
-              en: "Archive plate representing the current minimalist Tarot interface",
-            },
-            placeholder: { fr: "Placeholder · interface tarot v3 minimaliste", en: "Placeholder · tarot v3 minimalist interface" },
           },
         ],
       },

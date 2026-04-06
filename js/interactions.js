@@ -44,6 +44,27 @@
   }
 })();
 
+// Zoomable media — toggle in-place zoom on click
+(function () {
+  document.addEventListener('click', function (e) {
+    var zoom = e.target.closest('.tool-media-zoom');
+    if (!zoom) {
+      // Click outside closes any open zoom
+      var open = document.querySelector('.tool-media-zoom.is-zoomed');
+      if (open) open.classList.remove('is-zoomed');
+      return;
+    }
+    zoom.classList.toggle('is-zoomed');
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      var open = document.querySelector('.tool-media-zoom.is-zoomed');
+      if (open) open.classList.remove('is-zoomed');
+    }
+  });
+})();
+
 // Custom cursor — hover-aware branded circle
 (function () {
   // Only activate on devices with mouse input
