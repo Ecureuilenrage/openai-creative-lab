@@ -270,8 +270,14 @@ function applyStaticTranslations(lang) {
 
 function updateArchiveCount(lang) {
   const el = document.querySelector("#archive-count");
-  if (!el || !content.archive?.items) return;
-  const count = content.archive.items.length;
+  if (!el || !content.archive) return;
+  const a = content.archive;
+  let count = (a.items || []).length;
+  if (a.sections) {
+    for (const sec of Object.values(a.sections)) {
+      if (Array.isArray(sec.items)) count += sec.items.length;
+    }
+  }
   const tpl = textFor(content.homepage?.previews?.archive?.stat, lang) || "";
   el.textContent = tpl.replace("{count}", count);
 }

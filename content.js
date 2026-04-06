@@ -41,6 +41,7 @@ const content = {
       tarot:    { fr: "Tarot",    en: "Tarot" },
       tools:    { fr: "Outils",   en: "Toolchain" },
       archive:  { fr: "Archives", en: "Archive" },
+      about:    { fr: "À propos", en: "About" },
     },
     langToggle: { fr: "FR", en: "EN" },
     social: [
@@ -1107,10 +1108,69 @@ const content = {
     },
   },
 
+  // ─"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"─
+  //  PAGE 6 ─ ABOUT
+  // ─"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"──"─
+  about: {
+    metaTitle: {
+      fr: "À propos — Creative Lab OpenAI",
+      en: "About — Creative Lab OpenAI",
+    },
+    metaDescription: {
+      fr: "Présentation du projet, contexte de l'OpenAI Creative Lab, timeline et crédits.",
+      en: "Project presentation, OpenAI Creative Lab context, timeline, and credits.",
+    },
+    eyebrow: { fr: "À propos", en: "About" },
+    title: {
+      fr: "À propos de ce projet",
+      en: "About this project",
+    },
+
+    presentation: {
+      heading: { fr: "Qui suis-je", en: "Who am I" },
+      copy: {
+        fr: "Je m'appelle Léon Klein (@ex0niq). Ce site documente mon travail réalisé dans le cadre de l'OpenAI Creative Lab, en tant qu'étudiant à l'Université Paris 8.",
+        en: "I'm Léon Klein (@ex0niq). This site documents my work during the OpenAI Creative Lab as a student at Université Paris 8.",
+      },
+      portfolioLabel: { fr: "Portfolio", en: "Portfolio" },
+    },
+
+    labContext: {
+      heading: { fr: "Le Creative Lab", en: "The Creative Lab" },
+      copy: {
+        fr: "L'OpenAI Creative Lab est un programme de recherche créative en partenariat entre OpenAI et l'Université Paris 8, du 30 janvier au 27 mars 2026. Dirigé par Everardo Reyes et Rosa Cinelli (Paris 8) et Souki Mansoor (OpenAI, Artist Programs & Creative Community Lead).",
+        en: "The OpenAI Creative Lab is a creative research program in partnership between OpenAI and Université Paris 8, from January 30 to March 27, 2026. Directed by Everardo Reyes and Rosa Cinelli (Paris 8) and Souki Mansoor (OpenAI, Artist Programs & Creative Community Lead).",
+      },
+    },
+
+    timeline: {
+      heading: { fr: "Timeline", en: "Timeline" },
+      start: { date: "30/01/2026", label: { fr: "Début du programme", en: "Program start" } },
+      end:   { date: "27/03/2026", label: { fr: "Fin du programme", en: "Program end" } },
+    },
+
+    scope: {
+      heading: { fr: "Soumis vs documenté", en: "Submitted vs documented" },
+      copy: {
+        fr: "Ce site va au-delà du rendu soumis au Creative Lab. Il documente l'intégralité du parcours créatif : les itérations, les impasses, les outils et les décisions — pas seulement le résultat final.",
+        en: "This site goes beyond what was submitted to the Creative Lab. It documents the entire creative journey: the iterations, the dead ends, the tools, and the decisions — not just the final result.",
+      },
+    },
+
+    credits: {
+      heading: { fr: "Crédits & Remerciements", en: "Credits & Acknowledgments" },
+      copy: {
+        fr: "Remerciements à Everardo Reyes, Rosa Cinelli et Souki Mansoor pour l'encadrement du programme, ainsi qu'à OpenAI pour l'accès aux outils.",
+        en: "Thanks to Everardo Reyes, Rosa Cinelli, and Souki Mansoor for directing the program, and to OpenAI for providing access to the tools.",
+      },
+    },
+  },
+
   // Navigation cross-page
   navigation: {
     nextTarot: { fr: "Suivant : Tarot", en: "Next: Tarot" },
-    nextTools: { fr: "Suivant : Outils", en: "Next: Tools" },
+    nextTools:   { fr: "Suivant : Outils",   en: "Next: Tools" },
+    nextArchive: { fr: "Suivant : Archives", en: "Next: Archive" },
   },
 
   // ────── Footer ──────────────────────────────────────────────────────────────────────────────────────────
