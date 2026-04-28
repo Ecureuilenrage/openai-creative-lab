@@ -661,6 +661,28 @@ main {
   background: rgba(255, 255, 255, 0.44);
 }
 
+.audio-player {
+  margin: 1.2rem 0 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.44);
+  display: grid;
+  gap: 0.55rem;
+}
+
+.audio-player figcaption {
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.audio-player audio {
+  width: 100%;
+  height: 36px;
+}
+
 .tool-meta {
   display: grid;
   gap: 0.7rem;

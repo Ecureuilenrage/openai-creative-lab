@@ -234,8 +234,8 @@ const content = {
         title:  { fr: "Angle éditorial retenu", en: "Chosen editorial angle" },
         status: "curated",
         synopsis: {
-          fr: "Un voyageur solitaire et son monolithe traversent quatorze mondes : champs de blé, jungle, océan, ruines et portail, désert, archipel suspendu, médina, monde gelé, terre brûlée, jardin d'Éden, savane, vallée de fleurs — parfois sous sept soleils, parfois sous un seul — jusqu'au retour au monde ordinaire.",
-          en: "A lone traveler and their monolith cross fourteen worlds: wheat fields, jungle, ocean, ruins and portal, desert, suspended archipelago, medina, frozen world, burned earth, Garden of Eden, savannah, valley of flowers — sometimes under seven suns, sometimes under one — until the return to the ordinary world.",
+          fr: "Un voyageur solitaire et son monolithe traversent plusieurs mondes : champs de blé, jungle, océan, ruines et portail, désert, archipel suspendu, médina, monde gelé, terre brûlée, jardin d'Éden, savane, vallée de fleurs — parfois sous sept soleils, parfois sous un seul — jusqu'au retour au monde ordinaire.",
+          en: "A lone traveler and their monolith cross multiple worlds: wheat fields, jungle, ocean, ruins and portal, desert, suspended archipelago, medina, frozen world, burned earth, Garden of Eden, savannah, valley of flowers — sometimes under seven suns, sometimes under one — until the return to the ordinary world.",
         },
         points: [
           {
@@ -366,8 +366,8 @@ const content = {
         tag:   { fr: "Trailer final", en: "Final trailer" },
         title: { fr: "V1 trailer Soulborn", en: "V1 Soulborn trailer" },
         copy: {
-          fr: "Le trailer rassemble les quatorze mondes en une traversée continue : chaque scène a été générée avec Sora, assemblée dans CapCut et accompagnée d'une bande-son composée via Suno. Le voyageur et le monolithe servent de fil conducteur visuel d'un monde à l'autre.",
-          en: "The trailer brings together the fourteen worlds in a continuous crossing: each scene was generated with Sora, assembled in CapCut, and accompanied by a soundtrack composed via Suno. The traveler and the monolith serve as a visual thread from one world to the next.",
+          fr: "Le trailer rassemble plusieurs mondes en une traversée continue : chaque scène a été générée avec Sora, assemblée dans CapCut et accompagnée d'une bande-son composée via Suno. Le voyageur et le monolithe servent de fil conducteur visuel d'un monde à l'autre.",
+          en: "The trailer brings together some of the worlds in a continuous crossing: each scene was generated with Sora, assembled in CapCut, and accompanied by a soundtrack composed via Suno. The traveler and the monolith serve as a visual thread from one world to the next.",
         },
         status: "available",
       },
@@ -1057,6 +1057,8 @@ const content = {
               fr: "Direction musicale sélectionnée pour le trailer Soulborn — rythme conçu pour les transitions rapides entre mondes.",
               en: "Music direction selected for the Soulborn trailer — rhythm designed for fast transitions between worlds.",
             },
+            href: "https://drive.google.com/drive/folders/1E_YAy8NFj75yHSAtr7sOr7QqDgYw4XCW?usp=sharing",
+            button: { fr: "Télécharger ↗", en: "Download ↗" },
           },
           {
             tag: { fr: "Soulborn", en: "Soulborn" },
