@@ -1049,6 +1049,11 @@ const content = {
           fr: "Prompts clés et directions éditoriales utilisés sur les deux projets — les formulations brutes qui ont guidé la génération d'images, la production musicale et le cadrage narratif.",
           en: "Key prompts and editorial directions used across both projects — the raw formulations that guided image generation, music production, and narrative framing.",
         },
+        aiNote: {
+          fr: "La majorité des prompts ont été écrits avec l'aide de Claude, Gemini et ChatGPT. Tous les prompts utilisés pour les images et les vidéos sont archivés dans les fichiers et dossiers du Drive du projet. Pour explorer les images et les vidéos générées, naviguez dans les sections Soulborn ou Tarot.",
+          en: "Most prompts were written with the help of Claude, Gemini, and ChatGPT. All prompts used for images and videos are archived in the files and folders of the project's Drive. To browse the generated images and videos, navigate to the Soulborn or Tarot sections.",
+        },
+        driveButton: { fr: "Ouvrir le Drive ↗", en: "Open Drive ↗" },
         items: [
           {
             tag: { fr: "Soulborn", en: "Soulborn" },
@@ -1087,6 +1092,13 @@ const content = {
         alt: {
           fr: "Graphe de connaissances Obsidian montrant les connexions de recherche, les nœuds de brainstorming et les liens croisés entre Soulborn et Tarot",
           en: "Obsidian knowledge graph showing research connections, brainstorming nodes, and cross-references across Soulborn and Tarot projects",
+        },
+      },
+      editorial: {
+        title: { fr: "Direction éditoriale & Récit", en: "Editorial & Narrative" },
+        intro: {
+          fr: "Notes éditoriales et arcs narratifs qui ont structuré les deux projets — les angles retenus, les pivots et les choix de cadrage.",
+          en: "Editorial notes and narrative arcs that shaped both projects — chosen angles, pivots, and framing decisions.",
         },
       },
       downloads: {
